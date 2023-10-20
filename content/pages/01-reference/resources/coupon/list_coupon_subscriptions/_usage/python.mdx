@@ -1,0 +1,20 @@
+```python ListCouponSubscriptions.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.coupon.list_subscriptions(coupon_id='string', cursor='string', limit=715190)
+
+if res.subscriptions is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

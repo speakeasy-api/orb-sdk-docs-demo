@@ -1,0 +1,22 @@
+```python CreateMetric.py
+import orb
+from orb.models import shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+req = shared.NewBillableMetric(
+    description='Sum of bytes downloaded in fast mode',
+    item_id='string',
+    metadata=shared.NewBillableMetricMetadata(),
+    name='Bytes downloaded',
+    sql='SELECT sum(bytes_downloaded) FROM events WHERE download_speed = \'fast\'',
+)
+
+res = s.metric.create(req)
+
+if res.billable_metric is not None:
+    # handle response
+    pass
+```

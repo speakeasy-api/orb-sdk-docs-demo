@@ -1,0 +1,17 @@
+```typescript Ping.ts
+import { Orb } from "orb-billing";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.availability.ping();
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

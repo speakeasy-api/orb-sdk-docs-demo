@@ -1,0 +1,20 @@
+```python UpdateFixedFeeQuantity.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.subscription.update_fixed_fee_quantity(subscription_id='string', fixed_fee_quantity_change=shared.FixedFeeQuantityChange(
+    effective_date=dateutil.parser.parse('2022-12-21').date(),
+    price_id='string',
+    quantity=3637.11,
+))
+
+if res.subscription is not None:
+    # handle response
+    pass
+```

@@ -1,0 +1,20 @@
+```python MarkInvoiceAsPaid.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.invoice.mark_invoice_as_paid(invoice_id='string', mark_as_paid_request_params=shared.MarkAsPaidRequestParams(
+    external_id='external_payment_id_123',
+    notes='string',
+    payment_received_date=dateutil.parser.parse('2023-09-22').date(),
+))
+
+if res.invoice is not None:
+    # handle response
+    pass
+```

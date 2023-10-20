@@ -1,0 +1,26 @@
+```python FetchSubscriptionUsage.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+req = operations.FetchSubscriptionUsageRequest(
+    subscription_id='string',
+    timeframe_end=dateutil.parser.isoparse('2022-03-01T05:00:00Z'),
+    timeframe_start=dateutil.parser.isoparse('2022-02-01T05:00:00Z'),
+)
+
+res = s.subscription.fetch_usage(req)
+
+if res.subscription_usage is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

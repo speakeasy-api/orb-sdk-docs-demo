@@ -1,0 +1,22 @@
+```typescript TriggerPhase.ts
+import { Orb } from "orb-billing";
+import { TriggerPhaseRequest } from "orb-billing/dist/sdk/models/operations";
+import { TriggerSubscriptionPhaseParams } from "orb-billing/dist/sdk/models/shared";
+import { RFCDate } from "orb-billing/dist/sdk/types";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const subscriptionId: string = "string";
+const triggerSubscriptionPhaseParams: TriggerSubscriptionPhaseParams = {};
+
+  const res = await sdk.subscription.triggerPhase(subscriptionId, triggerSubscriptionPhaseParams);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

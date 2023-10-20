@@ -1,0 +1,25 @@
+```python Ingest.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.event.ingest(ingest_request_body=shared.IngestRequestBody(
+    events=[
+        shared.IngestEvent(
+            event_name='string',
+            idempotency_key='string',
+            properties=shared.IngestEventProperties(),
+            timestamp=dateutil.parser.isoparse('2020-12-09T16:09:53Z'),
+        ),
+    ],
+), backfill_id='string', debug=False)
+
+if res.ingestion_response is not None:
+    # handle response
+    pass
+```

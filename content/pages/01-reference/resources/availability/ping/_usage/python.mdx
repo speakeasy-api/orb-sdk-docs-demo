@@ -1,0 +1,15 @@
+```python Ping.py
+import orb
+from orb.models import shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.availability.ping()
+
+if res.ping_response is not None:
+    # handle response
+    pass
+```

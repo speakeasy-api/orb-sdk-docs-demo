@@ -1,0 +1,23 @@
+```typescript UpdatePlan.ts
+import { Orb } from "orb-billing";
+import { UpdatePlanRequest } from "orb-billing/dist/sdk/models/operations";
+import { EditPlan, EditPlanMetadata } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const planId: string = "string";
+const editPlan: EditPlan = {
+  metadata: {},
+};
+
+  const res = await sdk.plan.updatePlan(planId, editPlan);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

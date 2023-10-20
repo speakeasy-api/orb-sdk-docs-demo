@@ -1,0 +1,15 @@
+```python DeleteCustomer.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.customer.delete(customer_id='string')
+
+if res.delete_customer_response is not None:
+    # handle response
+    pass
+```

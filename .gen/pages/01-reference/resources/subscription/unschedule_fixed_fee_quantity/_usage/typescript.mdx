@@ -1,0 +1,23 @@
+```typescript UnscheduleFixedFeeQuantity.ts
+import { Orb } from "orb-billing";
+import { UnscheduleFixedFeeQuantityRequest } from "orb-billing/dist/sdk/models/operations";
+import { UnscheduleFixedFeeQuantityChangeParams } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const subscriptionId: string = "string";
+const unscheduleFixedFeeQuantityChangeParams: UnscheduleFixedFeeQuantityChangeParams = {
+  priceId: "string",
+};
+
+  const res = await sdk.subscription.unscheduleFixedFeeQuantity(subscriptionId, unscheduleFixedFeeQuantityChangeParams);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

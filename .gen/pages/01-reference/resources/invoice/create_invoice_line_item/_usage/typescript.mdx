@@ -1,0 +1,25 @@
+```typescript CreateInvoiceLineItem.ts
+import { Orb } from "orb-billing";
+import { RFCDate } from "orb-billing/dist/sdk/types";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.invoice.createLineItem({
+    amount: "12.00",
+    endDate: new RFCDate("2023-09-22"),
+    invoiceId: "4khy3nwzktxv7",
+    name: "Item Name",
+    quantity: 1,
+    startDate: new RFCDate("2023-09-22"),
+  });
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

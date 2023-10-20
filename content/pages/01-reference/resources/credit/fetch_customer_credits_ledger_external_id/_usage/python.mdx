@@ -1,0 +1,19 @@
+```python FetchCustomerCreditsLedgerExternalId.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+req = operations.FetchCustomerCreditsLedgerExternalIDRequest(
+    external_customer_id='string',
+)
+
+res = s.credit.fetch_ledger_by_external_id(req)
+
+if res.credit_ledger_entries is not None:
+    # handle response
+    pass
+```

@@ -1,0 +1,17 @@
+```python UpdatePlanExternal.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.plan.update_plan_external(external_plan_id='string', edit_plan=shared.EditPlan(
+    metadata=shared.EditPlanMetadata(),
+))
+
+if res.plan is not None:
+    # handle response
+    pass
+```

@@ -1,0 +1,19 @@
+```typescript FetchCreditNote.ts
+import { Orb } from "orb-billing";
+import { FetchCreditNoteRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const creditNoteId: string = "string";
+
+  const res = await sdk.creditNote.fetch(creditNoteId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

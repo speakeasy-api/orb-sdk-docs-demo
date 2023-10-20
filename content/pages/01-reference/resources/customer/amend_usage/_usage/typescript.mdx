@@ -1,0 +1,27 @@
+```typescript AmendUsage.ts
+import { Orb } from "orb-billing";
+import { AmendUsageRequest } from "orb-billing/dist/sdk/models/operations";
+import { UpdateEvent, UpdateEventProperties } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const customerId: string = "string";
+const updateEvent: UpdateEvent = {
+  eventName: "string",
+  properties: {},
+  timestamp: new Date("2020-12-09T16:09:53Z"),
+};
+const timeframeEnd: Date = new Date("2023-07-29T10:48:39.203Z");
+const timeframeStart: Date = new Date("2022-08-20T15:31:47.646Z");
+
+  const res = await sdk.customer.amend(customerId, updateEvent, timeframeEnd, timeframeStart);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

@@ -1,0 +1,38 @@
+## Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `next` method that can be called to pull down the next group of results. If the
+return value of `next` is `null`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+## [object Object]
+
+```typescript
+import { Orb } from "orb-billing";
+import { ListCouponsRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async () => {
+    const sdk = new Orb({
+        security: {
+            apiKeyAuth: "",
+        },
+    });
+    const cursor: string = "string";
+    const limit: number = 768578;
+    const redemptionCode: string = "string";
+    const showArchived: boolean = false;
+
+    const res = await sdk.coupon.list(cursor, limit, redemptionCode, showArchived);
+
+    if (res.statusCode == 200) {
+        do {
+            // handle items
+
+            res = res.next();
+        } while (res);
+    }
+})();
+
+```

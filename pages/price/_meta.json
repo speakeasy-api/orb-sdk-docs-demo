@@ -1,0 +1,18 @@
+{
+  "create_price": {
+    "title": "resources/price/Create Price",
+    "href": "/resources/price/create_price"
+  },
+  "fetch_price": {
+    "title": "resources/price/Fetch Price",
+    "href": "/resources/price/fetch_price"
+  },
+  "fetch_price_external_id": {
+    "title": "resources/price/Fetch Price External Id",
+    "href": "/resources/price/fetch_price_external_id"
+  },
+  "list_prices": {
+    "title": "resources/price/List Prices",
+    "href": "/resources/price/list_prices"
+  }
+}

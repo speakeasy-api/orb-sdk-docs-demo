@@ -1,0 +1,21 @@
+```python ListSubscriptions.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.subscription.list(created_at_gt=dateutil.parser.isoparse('2022-12-17T04:31:12.166Z'), created_at_gte=dateutil.parser.isoparse('2023-01-05T08:21:47.955Z'), created_at_lt=dateutil.parser.isoparse('2021-07-07T03:30:14.124Z'), created_at_lte=dateutil.parser.isoparse('2021-08-19T08:51:13.394Z'), cursor='string', customer_id='string', external_customer_id='string', limit=358152, status=operations.ListSubscriptionsStatusStatus.ACTIVE)
+
+if res.subscriptions is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

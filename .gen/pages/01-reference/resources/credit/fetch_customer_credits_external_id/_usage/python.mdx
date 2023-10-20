@@ -1,0 +1,20 @@
+```python FetchCustomerCreditsExternalId.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.credit.fetch_balance_by_external_id(external_customer_id='string', cursor='string', limit=423655)
+
+if res.customer_credit_balances is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

@@ -1,0 +1,23 @@
+```typescript CancelSubscription.ts
+import { Orb } from "orb-billing";
+import { CancelSubscriptionRequest } from "orb-billing/dist/sdk/models/operations";
+import { CancelSubscriptionParams, CancelSubscriptionParamsCancelOption } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const subscriptionId: string = "string";
+const cancelSubscriptionParams: CancelSubscriptionParams = {
+  cancelOption: CancelSubscriptionParamsCancelOption.Immediate,
+};
+
+  const res = await sdk.subscription.cancel(subscriptionId, cancelSubscriptionParams);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

@@ -1,0 +1,27 @@
+```typescript AmendUsageExternalCustomerId.ts
+import { Orb } from "orb-billing";
+import { AmendUsageExternalCustomerIdRequest } from "orb-billing/dist/sdk/models/operations";
+import { UpdateEvent, UpdateEventProperties } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const externalCustomerId: string = "string";
+const updateEvent: UpdateEvent = {
+  eventName: "string",
+  properties: {},
+  timestamp: new Date("2020-12-09T16:09:53Z"),
+};
+const timeframeEnd: Date = new Date("2023-07-17T17:46:32.359Z");
+const timeframeStart: Date = new Date("2022-04-09T21:38:53.014Z");
+
+  const res = await sdk.customer.amendByExternalId(externalCustomerId, updateEvent, timeframeEnd, timeframeStart);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

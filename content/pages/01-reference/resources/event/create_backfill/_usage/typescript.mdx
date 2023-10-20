@@ -1,0 +1,20 @@
+```typescript CreateBackfill.ts
+import { Orb } from "orb-billing";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.event.create({
+    timeframeEnd: new Date("2022-08-03T03:21:30.736Z"),
+    timeframeStart: new Date("2022-06-10T13:48:00.232Z"),
+  });
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

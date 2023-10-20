@@ -1,0 +1,74 @@
+{
+  "[...slug]": {
+    "title": "Home",
+    "href": "/home"
+  },
+  "-- guides": {
+    "title": "Guides",
+    "type": "separator"
+  },
+  "installation": {
+    "title": "Installation",
+    "href": "/installation"
+  },
+  "pagination": {
+    "title": "Pagination",
+    "href": "/pagination"
+  },
+  "-- resources": {
+    "title": "Resources",
+    "type": "separator"
+  },
+  "availability": {
+    "title": "resources/Availability",
+    "href": "/resources/availability"
+  },
+  "coupon": {
+    "title": "resources/Coupon",
+    "href": "/resources/coupon"
+  },
+  "credit": {
+    "title": "resources/Credit",
+    "href": "/resources/credit"
+  },
+  "credit_note": {
+    "title": "resources/Credit Note",
+    "href": "/resources/credit_note"
+  },
+  "customer": {
+    "title": "resources/Customer",
+    "href": "/resources/customer"
+  },
+  "event": {
+    "title": "resources/Event",
+    "href": "/resources/event"
+  },
+  "invoice": {
+    "title": "resources/Invoice",
+    "href": "/resources/invoice"
+  },
+  "item": {
+    "title": "resources/Item",
+    "href": "/resources/item"
+  },
+  "metric": {
+    "title": "resources/Metric",
+    "href": "/resources/metric"
+  },
+  "plan": {
+    "title": "resources/Plan",
+    "href": "/resources/plan"
+  },
+  "price": {
+    "title": "resources/Price",
+    "href": "/resources/price"
+  },
+  "price_interval": {
+    "title": "resources/Price Interval",
+    "href": "/resources/price_interval"
+  },
+  "subscription": {
+    "title": "resources/Subscription",
+    "href": "/resources/subscription"
+  }
+}

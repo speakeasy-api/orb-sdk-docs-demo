@@ -1,0 +1,31 @@
+```typescript Ingest.ts
+import { Orb } from "orb-billing";
+import { IngestRequest } from "orb-billing/dist/sdk/models/operations";
+import { IngestEvent, IngestEventProperties, IngestRequestBody } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const ingestRequestBody: IngestRequestBody = {
+  events: [
+    {
+      eventName: "string",
+      idempotencyKey: "string",
+      properties: {},
+      timestamp: new Date("2020-12-09T16:09:53Z"),
+    },
+  ],
+};
+const backfillId: string = "string";
+const debug: boolean = false;
+
+  const res = await sdk.event.ingest(ingestRequestBody, backfillId, debug);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

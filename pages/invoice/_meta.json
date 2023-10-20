@@ -1,0 +1,34 @@
+{
+  "create_invoice": {
+    "title": "resources/invoice/Create Invoice",
+    "href": "/resources/invoice/create_invoice"
+  },
+  "create_invoice_line_item": {
+    "title": "resources/invoice/Create Invoice Line Item",
+    "href": "/resources/invoice/create_invoice_line_item"
+  },
+  "fetch_invoice": {
+    "title": "resources/invoice/Fetch Invoice",
+    "href": "/resources/invoice/fetch_invoice"
+  },
+  "fetch_upcoming_invoice": {
+    "title": "resources/invoice/Fetch Upcoming Invoice",
+    "href": "/resources/invoice/fetch_upcoming_invoice"
+  },
+  "issue_invoice": {
+    "title": "resources/invoice/Issue Invoice",
+    "href": "/resources/invoice/issue_invoice"
+  },
+  "list_invoices": {
+    "title": "resources/invoice/List Invoices",
+    "href": "/resources/invoice/list_invoices"
+  },
+  "mark_invoice_as_paid": {
+    "title": "resources/invoice/Mark Invoice As Paid",
+    "href": "/resources/invoice/mark_invoice_as_paid"
+  },
+  "void_invoice": {
+    "title": "resources/invoice/Void Invoice",
+    "href": "/resources/invoice/void_invoice"
+  }
+}

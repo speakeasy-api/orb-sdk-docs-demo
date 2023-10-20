@@ -1,0 +1,26 @@
+```typescript UpdateFixedFeeQuantity.ts
+import { Orb } from "orb-billing";
+import { UpdateFixedFeeQuantityRequest } from "orb-billing/dist/sdk/models/operations";
+import { FixedFeeQuantityChange, FixedFeeQuantityChangeChangeOption } from "orb-billing/dist/sdk/models/shared";
+import { RFCDate } from "orb-billing/dist/sdk/types";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const subscriptionId: string = "string";
+const fixedFeeQuantityChange: FixedFeeQuantityChange = {
+  effectiveDate: new RFCDate("2022-12-21"),
+  priceId: "string",
+  quantity: 6481.72,
+};
+
+  const res = await sdk.subscription.updateFixedFeeQuantity(subscriptionId, fixedFeeQuantityChange);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

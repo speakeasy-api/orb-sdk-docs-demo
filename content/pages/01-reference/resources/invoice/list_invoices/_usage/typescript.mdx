@@ -1,0 +1,27 @@
+```typescript ListInvoices.ts
+import { Orb } from "orb-billing";
+import { ListInvoicesDateTypeDateType, ListInvoicesStatus, ListInvoicesStatusStatus } from "orb-billing/dist/sdk/models/operations";
+import { RFCDate } from "orb-billing/dist/sdk/types";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.invoice.list({
+    statuses: [
+      ListInvoicesStatus.Issued,
+    ],
+  });
+
+  if (res.statusCode == 200) {
+    do {
+      // handle items
+
+      res = res.next();
+    } while (res);
+  }
+})();
+```

@@ -1,0 +1,38 @@
+## Search Events
+
+This endpoint returns a filtered set of events for an account in a [paginated list format](../reference/pagination).
+
+Note that this is a `POST` endpoint rather than a `GET` endpoint because it employs a JSON body for search criteria
+rather than query parameters, allowing for a more flexible search syntax.
+
+Note that a search criteria _must_ be specified. Currently, Orb supports the following criteria:
+- `event_ids`: This is an explicit array of IDs to filter by. Note that an event's ID is the `idempotency_key` that
+  was originally used for ingestion.
+- `invoice_id`: This is an issued Orb invoice ID (see also [List Invoices](list-invoices)). Orb will fetch all
+  events that were used to calculate the invoice. In the common case, this will be a list of events whose
+  `timestamp` property falls within the billing period specified by the invoice.
+
+By default, Orb does not return _deprecated_ events in this endpoint.
+
+By default, Orb will not throw a `404` if no events matched, Orb will return an empty array for `data` instead.
+
+{/* rendered from operation template */}
+
+import {LanguageOperation} from "/.gen/languages";
+import {LanguageSwitch} from "/.gen/languages";
+import TypescriptParameters from "./_parameters/typescript.mdx";
+import TypescriptResponse from "./_response/typescript.mdx";
+import TypescriptUsage from "./_usage/typescript.mdx";
+import PythonParameters from "./_parameters/python.mdx";
+import PythonResponse from "./_response/python.mdx";
+import PythonUsage from "./_usage/python.mdx";
+
+export const Operation = () => {
+    const typescript = <LanguageOperation parameters={<TypescriptParameters/>} response={<TypescriptResponse/>} usage={<TypescriptUsage/>}/>
+    const python = <LanguageOperation parameters={<PythonParameters/>} response={<PythonResponse/>} usage={<PythonUsage/>}/>
+    return <LanguageSwitch langToContent={{typescript, python}}/>
+}
+
+<Operation />
+
+{/* end rendered section */}

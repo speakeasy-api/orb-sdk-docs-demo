@@ -1,0 +1,23 @@
+```typescript UpdatePlanExternal.ts
+import { Orb } from "orb-billing";
+import { UpdatePlanExternalRequest } from "orb-billing/dist/sdk/models/operations";
+import { EditPlan, EditPlanMetadata } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const externalPlanId: string = "string";
+const editPlan: EditPlan = {
+  metadata: {},
+};
+
+  const res = await sdk.plan.updatePlanExternal(externalPlanId, editPlan);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

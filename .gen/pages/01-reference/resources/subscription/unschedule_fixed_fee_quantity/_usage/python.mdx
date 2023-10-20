@@ -1,0 +1,17 @@
+```python UnscheduleFixedFeeQuantity.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.subscription.unschedule_fixed_fee_quantity(subscription_id='string', unschedule_fixed_fee_quantity_change_params=shared.UnscheduleFixedFeeQuantityChangeParams(
+    price_id='string',
+))
+
+if res.subscription is not None:
+    # handle response
+    pass
+```

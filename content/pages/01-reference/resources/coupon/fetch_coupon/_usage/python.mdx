@@ -1,0 +1,15 @@
+```python FetchCoupon.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.coupon.fetch(coupon_id='string')
+
+if res.coupon is not None:
+    # handle response
+    pass
+```

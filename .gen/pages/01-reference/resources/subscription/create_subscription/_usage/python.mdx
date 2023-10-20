@@ -1,0 +1,41 @@
+```python CreateSubscription.py
+import orb
+import dateutil.parser
+from orb.models import shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+req = shared.NewSubscription1(
+    external_plan_id='ZMwNQefe7J3ecf7W',
+    metadata=shared.NewSubscriptionMetadata(),
+    plan_id='ZMwNQefe7J3ecf7W',
+    price_overrides=[
+        shared.OverrideThresholdTotalAmountPrice(
+            discount=shared.DiscountOverride(
+                applies_to_price_ids=[
+                    'h74gfhdjvn7ujokd',
+                    '7hfgtgjnbvc3ujkl',
+                ],
+                discount_type=shared.DiscountOverrideDiscountType.TRIAL,
+                percentage_discount=0.15,
+            ),
+            fixed_price_quantity=2,
+            id='<ID>',
+            maximum_amount='1.23',
+            minimum_amount='1.23',
+            model_type=shared.OverrideThresholdTotalAmountPriceModelType.THRESHOLD_TOTAL_AMOUNT,
+            threshold_total_amount_config={
+                "key": 'string',
+            },
+        ),
+    ],
+)
+
+res = s.subscription.create(req)
+
+if res.subscription is not None:
+    # handle response
+    pass
+```

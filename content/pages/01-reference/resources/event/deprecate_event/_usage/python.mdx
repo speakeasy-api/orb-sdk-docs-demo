@@ -1,0 +1,15 @@
+```python DeprecateEvent.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.event.deprecate_event(event_id='string')
+
+if res.deprecated_event_result is not None:
+    # handle response
+    pass
+```

@@ -1,0 +1,15 @@
+```python FetchPlanExternalId.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.plan.fetch_by_external_id(external_plan_id='string')
+
+if res.plan is not None:
+    # handle response
+    pass
+```

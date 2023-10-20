@@ -1,0 +1,15 @@
+```python FetchPrice.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.price.fetch(price_id='string')
+
+if res.price is not None:
+    # handle response
+    pass
+```

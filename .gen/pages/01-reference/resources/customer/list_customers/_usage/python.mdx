@@ -1,0 +1,21 @@
+```python ListCustomers.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.customer.list(created_at_gt=dateutil.parser.isoparse('2022-03-07T02:23:03.711Z'), created_at_gte=dateutil.parser.isoparse('2023-10-11T12:40:46.277Z'), created_at_lt=dateutil.parser.isoparse('2023-07-05T12:09:00.162Z'), created_at_lte=dateutil.parser.isoparse('2021-03-19T18:49:39.442Z'), cursor='string', limit=337396)
+
+if res.customers is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

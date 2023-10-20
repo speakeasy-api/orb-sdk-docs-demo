@@ -1,0 +1,16 @@
+```python TriggerPhase.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.subscription.trigger_phase(subscription_id='string', trigger_subscription_phase_params=shared.TriggerSubscriptionPhaseParams())
+
+if res.subscription is not None:
+    # handle response
+    pass
+```

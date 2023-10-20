@@ -1,0 +1,15 @@
+```python FetchMetric.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.metric.fetch(metric_id='string')
+
+if res.billable_metric is not None:
+    # handle response
+    pass
+```

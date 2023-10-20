@@ -1,0 +1,26 @@
+```typescript MarkInvoiceAsPaid.ts
+import { Orb } from "orb-billing";
+import { MarkInvoiceAsPaidRequest } from "orb-billing/dist/sdk/models/operations";
+import { MarkAsPaidRequestParams } from "orb-billing/dist/sdk/models/shared";
+import { RFCDate } from "orb-billing/dist/sdk/types";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const invoiceId: string = "string";
+const markAsPaidRequestParams: MarkAsPaidRequestParams = {
+  externalId: "external_payment_id_123",
+  notes: "string",
+  paymentReceivedDate: new RFCDate("2023-09-22"),
+};
+
+  const res = await sdk.invoice.markInvoiceAsPaid(invoiceId, markAsPaidRequestParams);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

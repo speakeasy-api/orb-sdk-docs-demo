@@ -1,0 +1,19 @@
+```typescript FetchMetric.ts
+import { Orb } from "orb-billing";
+import { FetchMetricRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const metricId: string = "string";
+
+  const res = await sdk.metric.fetch(metricId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

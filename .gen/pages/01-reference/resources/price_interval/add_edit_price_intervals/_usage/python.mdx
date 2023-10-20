@@ -1,0 +1,67 @@
+```python AddEditPriceIntervals.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.price_interval.add_edit_price_intervals(subscription_id='string', add_edit_price_interval_params1=shared.AddEditPriceIntervalParams1(
+    add=[
+        shared.AddPriceIntervalParams1(
+            discounts=[
+                shared.AmountDiscountCreationParams(
+                    amount_discount=10.00,
+                    discount_type=shared.AmountDiscountCreationParamsDiscountType.AMOUNT,
+                ),
+            ],
+        dateutil.parser.isoparse('2023-07-10'),
+            external_price_id='external_price_id',
+            fixed_fee_quantity_transitions=[
+                shared.PriceIntervalFixedFeeQuantityTransitionParams(
+                    effective_date=dateutil.parser.isoparse('2023-05-01'),
+                    quantity=5,
+                ),
+            ],
+            maximum_amount=1.23,
+            minimum_amount=1.23,
+            shared.NewFloatingTieredPrice(
+                cadence=shared.NewFloatingTieredPriceCadence.ANNUAL,
+                currency='Rial Omani',
+                item_id='string',
+                model_type=shared.NewFloatingTieredPriceModelType.TIERED,
+                name='Annual fee',
+                tiered_config=shared.TieredConfig(
+                    tiers=[
+                        shared.Tier(
+                            first_unit=2223.21,
+                            unit_amount='string',
+                        ),
+                    ],
+                ),
+            ),
+            price_id='h74gfhdjvn7ujokd',
+        shared.AddPriceIntervalParamsStartDateStartDate.START_OF_TERM,
+        ),
+    ],
+    edit=[
+        shared.EditPriceIntervalParams1(
+        shared.EditPriceIntervalParamsEndDateEndDate.END_OF_TERM,
+            fixed_fee_quantity_transitions=[
+                shared.PriceIntervalFixedFeeQuantityTransitionParams(
+                    effective_date=dateutil.parser.isoparse('2023-05-01'),
+                    quantity=5,
+                ),
+            ],
+            price_interval_id='sdfs6wdjvn7ujokd',
+        shared.EditPriceIntervalParamsStartDateStartDate.START_OF_TERM,
+        ),
+    ],
+))
+
+if res.subscription is not None:
+    # handle response
+    pass
+```

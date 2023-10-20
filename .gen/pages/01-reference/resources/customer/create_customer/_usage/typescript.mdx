@@ -1,0 +1,43 @@
+```typescript CreateCustomer.ts
+import { Orb } from "orb-billing";
+import { CustomerTaxIdCountry, CustomerTaxIdType, NewCustomerPaymentProvider } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.customer.create({
+    accountingSyncConfiguration: {
+      accountingProviders: [
+        {
+          externalProviderId: "string",
+          providerType: "string",
+        },
+      ],
+    },
+    additionalEmails: [
+      "string",
+    ],
+    billingAddress: {},
+    email: "Luna.Hoppe@yahoo.com",
+    metadata: {},
+    name: "string",
+    reportingConfiguration: {
+      exempt: false,
+    },
+    shippingAddress: {},
+    taxId: {
+      country: CustomerTaxIdCountry.Sk,
+      type: CustomerTaxIdType.AuAbn,
+      value: "string",
+    },
+  });
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

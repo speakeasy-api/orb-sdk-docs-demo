@@ -1,0 +1,19 @@
+```typescript UnscheduleCancellation.ts
+import { Orb } from "orb-billing";
+import { UnscheduleCancellationRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const subscriptionId: string = "string";
+
+  const res = await sdk.subscription.unscheduleCancellation(subscriptionId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

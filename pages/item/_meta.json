@@ -1,0 +1,10 @@
+{
+  "fetch_item": {
+    "title": "resources/item/Fetch Item",
+    "href": "/resources/item/fetch_item"
+  },
+  "list_items": {
+    "title": "resources/item/List Items",
+    "href": "/resources/item/list_items"
+  }
+}

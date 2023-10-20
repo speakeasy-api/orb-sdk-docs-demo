@@ -1,0 +1,18 @@
+```python CreateCustomerBalanceTransaction.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.customer.create_balance_transaction(customer_id='string', new_customer_balance_transaction=shared.NewCustomerBalanceTransaction(
+    amount='812.17',
+    type=shared.NewCustomerBalanceTransactionType.DECREMENT,
+))
+
+if res.customer_balance_transaction is not None:
+    # handle response
+    pass
+```

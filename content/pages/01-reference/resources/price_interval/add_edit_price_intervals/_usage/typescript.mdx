@@ -1,0 +1,60 @@
+```typescript AddEditPriceIntervals.ts
+import { Orb } from "orb-billing";
+import { AddEditPriceIntervalsRequest } from "orb-billing/dist/sdk/models/operations";
+import {
+  AddEditPriceIntervalParams,
+  AddPriceIntervalParams,
+  EditPriceIntervalParams,
+  PriceIntervalFixedFeeQuantityTransitionParams,
+} from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const subscriptionId: string = "string";
+const addEditPriceIntervalParams: AddEditPriceIntervalParams = {
+  add: [
+    {
+      discounts: [
+        "string",
+      ],
+      endDate: "2023-07-10",
+      externalPriceId: "external_price_id",
+      fixedFeeQuantityTransitions: [
+        {
+          effectiveDate: new Date("2023-05-01"),
+          quantity: 5,
+        },
+      ],
+      maximumAmount: 1.23,
+      minimumAmount: 1.23,
+      price: "string",
+      priceId: "h74gfhdjvn7ujokd",
+      startDate: "2023-05-01",
+    },
+  ],
+  edit: [
+    {
+      endDate: "2023-07-10",
+      fixedFeeQuantityTransitions: [
+        {
+          effectiveDate: new Date("2023-05-01"),
+          quantity: 5,
+        },
+      ],
+      priceIntervalId: "sdfs6wdjvn7ujokd",
+      startDate: "2023-05-01",
+    },
+  ],
+};
+
+  const res = await sdk.priceInterval.addEditPriceIntervals(subscriptionId, addEditPriceIntervalParams);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

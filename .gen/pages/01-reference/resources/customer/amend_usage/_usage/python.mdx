@@ -1,0 +1,20 @@
+```python AmendUsage.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.customer.amend(customer_id='string', update_event=shared.UpdateEvent(
+    event_name='string',
+    properties=shared.UpdateEventProperties(),
+    timestamp=dateutil.parser.isoparse('2020-12-09T16:09:53Z'),
+), timeframe_end=dateutil.parser.isoparse('2022-12-09T06:05:50.441Z'), timeframe_start=dateutil.parser.isoparse('2022-02-25T21:33:04.651Z'))
+
+if res.amended_usage is not None:
+    # handle response
+    pass
+```

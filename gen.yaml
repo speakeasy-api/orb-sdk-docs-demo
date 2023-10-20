@@ -1,0 +1,33 @@
+configVersion: 1.0.0
+generation:
+  comments:
+    disableComments: false
+    omitDescriptionIfSummaryPresent: false
+  baseServerURL: ""
+  sdkClassName: orb
+  singleTagPerOp: false
+  tagNamespacingDisabled: false
+features:
+  docs:
+    core: 0.24.0
+    globalSecurity: 0.1.0
+    globalServerURLs: 0.1.0
+    nameOverrides: 0.1.0
+    pagination: 0.1.1
+docs:
+  version: ""
+python:
+  version: 1.26.0
+  author: orbcorp
+  clientServerStatusCodesAsErrors: true
+  description: Python client SDK for Orb's API
+  flattenGlobalSecurity: true
+  maxMethodParams: 10
+  packageName: orb-billing
+typescript:
+  version: 1.21.0
+  author: orbcorp
+  clientServerStatusCodesAsErrors: true
+  flattenGlobalSecurity: false
+  maxMethodParams: 4
+  packageName: orb-billing

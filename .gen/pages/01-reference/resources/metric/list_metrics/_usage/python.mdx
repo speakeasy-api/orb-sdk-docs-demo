@@ -1,0 +1,21 @@
+```python ListMetrics.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.metric.list(created_at_gt=dateutil.parser.isoparse('2023-03-01T02:13:33.902Z'), created_at_gte=dateutil.parser.isoparse('2022-12-02T17:07:27.576Z'), created_at_lt=dateutil.parser.isoparse('2022-09-30T07:28:48.410Z'), created_at_lte=dateutil.parser.isoparse('2021-06-06T23:19:27.634Z'), cursor='string', limit=537373)
+
+if res.billable_metrics is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

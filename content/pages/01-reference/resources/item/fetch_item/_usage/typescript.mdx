@@ -1,0 +1,19 @@
+```typescript FetchItem.ts
+import { Orb } from "orb-billing";
+import { FetchItemRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const itemId: string = "string";
+
+  const res = await sdk.item.fetch(itemId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

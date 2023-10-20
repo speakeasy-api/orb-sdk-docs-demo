@@ -1,0 +1,21 @@
+```typescript CreateCoupon.ts
+import { Orb } from "orb-billing";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.coupon.create({
+    discount: "string",
+    durationInMonths: 12,
+    redemptionCode: "HALFOFF",
+  });
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

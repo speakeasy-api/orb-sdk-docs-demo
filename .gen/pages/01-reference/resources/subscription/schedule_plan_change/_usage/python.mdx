@@ -1,0 +1,53 @@
+```python SchedulePlanChange.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.subscription.schedule_plan_change(subscription_id='string', subscription_plan_change1=shared.SubscriptionPlanChange1(
+    change_date='2017-07-21T17:32:28Z',
+    change_option=shared.ChangeOption.IMMEDIATE,
+    external_plan_id='ZMwNQefe7J3ecf7W',
+    initial_phase_order=2,
+    invoicing_threshold='10.00',
+    plan_id='ZMwNQefe7J3ecf7W',
+    price_overrides=[
+        shared.OverrideMatrixPrice(
+            discount=shared.DiscountOverride(
+                applies_to_price_ids=[
+                    'h74gfhdjvn7ujokd',
+                    '7hfgtgjnbvc3ujkl',
+                ],
+                discount_type=shared.DiscountOverrideDiscountType.USAGE,
+                percentage_discount=0.15,
+            ),
+            fixed_price_quantity=2,
+            id='<ID>',
+            matrix_config=shared.MatrixConfig(
+                default_unit_amount='string',
+                dimensions=[
+                    'string',
+                ],
+                matrix_values=[
+                    shared.MatrixValue(
+                        dimension_values=[
+                            'string',
+                        ],
+                        unit_amount='string',
+                    ),
+                ],
+            ),
+            maximum_amount='1.23',
+            minimum_amount='1.23',
+            model_type=shared.OverrideMatrixPriceModelType.MATRIX,
+        ),
+    ],
+))
+
+if res.subscription is not None:
+    # handle response
+    pass
+```

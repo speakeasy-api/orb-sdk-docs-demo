@@ -1,0 +1,30 @@
+```python CreatePrice.py
+import orb
+from orb.models import shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+req = shared.NewFloatingTieredBpsPrice(
+    cadence=shared.NewFloatingTieredBpsPriceCadence.MONTHLY,
+    currency='Danish Krone',
+    item_id='string',
+    model_type=shared.NewFloatingTieredBpsPriceModelType.TIERED_BPS,
+    name='Annual fee',
+    tiered_bps_config=shared.TieredBpsConfig(
+        tiers=[
+            shared.BpsTier(
+                bps=5684.34,
+                minimum_amount='string',
+            ),
+        ],
+    ),
+)
+
+res = s.price.create(req)
+
+if res.price is not None:
+    # handle response
+    pass
+```

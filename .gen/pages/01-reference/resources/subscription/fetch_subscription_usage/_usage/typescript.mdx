@@ -1,0 +1,29 @@
+```typescript FetchSubscriptionUsage.ts
+import { Orb } from "orb-billing";
+import {
+  FetchSubscriptionUsageGranularityGranularity,
+  FetchSubscriptionUsageViewModeViewMode,
+} from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.subscription.fetchUsage({
+    subscriptionId: "string",
+    timeframeEnd: new Date("2022-03-01T05:00:00Z"),
+    timeframeStart: new Date("2022-02-01T05:00:00Z"),
+  });
+
+  if (res.statusCode == 200) {
+    do {
+      // handle items
+
+      res = res.next();
+    } while (res);
+  }
+})();
+```

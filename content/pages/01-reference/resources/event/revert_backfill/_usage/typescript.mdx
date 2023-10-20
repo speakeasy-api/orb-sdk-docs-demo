@@ -1,0 +1,19 @@
+```typescript RevertBackfill.ts
+import { Orb } from "orb-billing";
+import { RevertBackfillRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const backfillId: string = "string";
+
+  const res = await sdk.event.revertBackfill(backfillId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

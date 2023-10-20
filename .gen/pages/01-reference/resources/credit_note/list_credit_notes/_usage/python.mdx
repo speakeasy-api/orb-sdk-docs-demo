@@ -1,0 +1,20 @@
+```python ListCreditNotes.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.credit_note.list(cursor='string', limit=623564)
+
+if res.credit_notes is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```
