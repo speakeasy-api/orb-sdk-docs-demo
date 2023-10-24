@@ -1,7 +1,7 @@
 ```typescript SchedulePlanChange.ts
 import { Orb } from "orb-billing";
 import { SchedulePlanChangeRequest } from "orb-billing/dist/sdk/models/operations";
-import { BillingCycleAlignment, ChangeOption, SubscriptionPlanChange } from "orb-billing/dist/sdk/models/shared";
+import { BillingCycleAlignment, ChangeOption, SubscriptionPlanChange1 } from "orb-billing/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new Orb({
@@ -10,7 +10,7 @@ import { BillingCycleAlignment, ChangeOption, SubscriptionPlanChange } from "orb
     },
   });
 const subscriptionId: string = "string";
-const subscriptionPlanChange: SubscriptionPlanChange = {
+const subscriptionPlanChange1: SubscriptionPlanChange1 = {
   changeDate: "2017-07-21T17:32:28Z",
   changeOption: ChangeOption.RequestedDate,
   externalPlanId: "ZMwNQefe7J3ecf7W",
@@ -22,7 +22,7 @@ const subscriptionPlanChange: SubscriptionPlanChange = {
   ],
 };
 
-  const res = await sdk.subscription.schedulePlanChange(subscriptionId, subscriptionPlanChange);
+  const res = await sdk.subscription.schedulePlanChange(subscriptionId, subscriptionPlanChange1);
 
   if (res.statusCode == 200) {
     // handle response

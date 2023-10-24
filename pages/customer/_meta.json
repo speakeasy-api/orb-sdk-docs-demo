@@ -1,54 +1,54 @@
 {
   "amend_usage": {
-    "title": "resources/customer/Amend Usage",
+    "title": "Amend Usage",
     "href": "/resources/customer/amend_usage"
   },
   "amend_usage_external_customer_id": {
-    "title": "resources/customer/Amend Usage External Customer Id",
+    "title": "Amend Usage External Customer Id",
     "href": "/resources/customer/amend_usage_external_customer_id"
   },
   "create_customer": {
-    "title": "resources/customer/Create Customer",
+    "title": "Create Customer",
     "href": "/resources/customer/create_customer"
   },
   "create_customer_balance_transaction": {
-    "title": "resources/customer/Create Customer Balance Transaction",
+    "title": "Create Customer Balance Transaction",
     "href": "/resources/customer/create_customer_balance_transaction"
   },
   "delete_customer": {
-    "title": "resources/customer/Delete Customer",
+    "title": "Delete Customer",
     "href": "/resources/customer/delete_customer"
   },
   "fetch_customer": {
-    "title": "resources/customer/Fetch Customer",
+    "title": "Fetch Customer",
     "href": "/resources/customer/fetch_customer"
   },
-  "fetch_customer_external_id": {
-    "title": "resources/customer/Fetch Customer External Id",
-    "href": "/resources/customer/fetch_customer_external_id"
-  },
   "fetch_customer_costs": {
-    "title": "resources/customer/Fetch Customer Costs",
+    "title": "Fetch Customer Costs",
     "href": "/resources/customer/fetch_customer_costs"
   },
   "fetch_customer_costs_external_id": {
-    "title": "resources/customer/Fetch Customer Costs External Id",
+    "title": "Fetch Customer Costs External Id",
     "href": "/resources/customer/fetch_customer_costs_external_id"
   },
-  "list_customers": {
-    "title": "resources/customer/List Customers",
-    "href": "/resources/customer/list_customers"
+  "fetch_customer_external_id": {
+    "title": "Fetch Customer External Id",
+    "href": "/resources/customer/fetch_customer_external_id"
   },
   "list_balance_transactions": {
-    "title": "resources/customer/List Balance Transactions",
+    "title": "List Balance Transactions",
     "href": "/resources/customer/list_balance_transactions"
   },
-  "update_customer_external_id": {
-    "title": "resources/customer/Update Customer External Id",
-    "href": "/resources/customer/update_customer_external_id"
+  "list_customers": {
+    "title": "List Customers",
+    "href": "/resources/customer/list_customers"
   },
   "update_customer": {
-    "title": "resources/customer/Update Customer",
+    "title": "Update Customer",
     "href": "/resources/customer/update_customer"
+  },
+  "update_customer_external_id": {
+    "title": "Update Customer External Id",
+    "href": "/resources/customer/update_customer_external_id"
   }
 }

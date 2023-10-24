@@ -1,8 +1,4 @@
 {
-  "[...slug]": {
-    "title": "Home",
-    "href": "/home"
-  },
   "-- guides": {
     "title": "Guides",
     "type": "separator"
@@ -20,55 +16,55 @@
     "type": "separator"
   },
   "availability": {
-    "title": "resources/Availability",
+    "title": "Availability",
     "href": "/resources/availability"
   },
   "coupon": {
-    "title": "resources/Coupon",
+    "title": "Coupon",
     "href": "/resources/coupon"
   },
   "credit": {
-    "title": "resources/Credit",
+    "title": "Credit",
     "href": "/resources/credit"
   },
   "credit_note": {
-    "title": "resources/Credit Note",
+    "title": "Credit Note",
     "href": "/resources/credit_note"
   },
   "customer": {
-    "title": "resources/Customer",
+    "title": "Customer",
     "href": "/resources/customer"
   },
   "event": {
-    "title": "resources/Event",
+    "title": "Event",
     "href": "/resources/event"
   },
   "invoice": {
-    "title": "resources/Invoice",
+    "title": "Invoice",
     "href": "/resources/invoice"
   },
   "item": {
-    "title": "resources/Item",
+    "title": "Item",
     "href": "/resources/item"
   },
   "metric": {
-    "title": "resources/Metric",
+    "title": "Metric",
     "href": "/resources/metric"
   },
   "plan": {
-    "title": "resources/Plan",
+    "title": "Plan",
     "href": "/resources/plan"
   },
   "price": {
-    "title": "resources/Price",
+    "title": "Price",
     "href": "/resources/price"
   },
   "price_interval": {
-    "title": "resources/Price Interval",
+    "title": "Price Interval",
     "href": "/resources/price_interval"
   },
   "subscription": {
-    "title": "resources/Subscription",
+    "title": "Subscription",
     "href": "/resources/subscription"
   }
 }

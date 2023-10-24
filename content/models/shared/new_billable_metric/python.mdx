@@ -3,7 +3,8 @@ import Collapsible from "/components/Collapsible";
 
 ##### `description` *{`Optional[str]`}*
 A description of the metric.
-`Sum of bytes downloaded in fast mode`
+<br/>
+**Example value:** `Sum of bytes downloaded in fast mode`
 
 ---
 ##### `item_id` *{`str`}*
@@ -18,10 +19,12 @@ User-specified key value pairs, often useful for referencing internal resources 
 ---
 ##### `name` *{`str`}*
 The name of the metric.
-`Bytes downloaded`
+<br/>
+**Example value:** `Bytes downloaded`
 
 ---
 ##### `sql` *{`str`}*
 A sql string defining the metric.
-`SELECT sum(bytes_downloaded) FROM events WHERE download_speed = 'fast'`
+<br/>
+**Example value:** `SELECT sum(bytes_downloaded) FROM events WHERE download_speed = 'fast'`
 

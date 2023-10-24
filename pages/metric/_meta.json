@@ -1,14 +1,14 @@
 {
   "create_metric": {
-    "title": "resources/metric/Create Metric",
+    "title": "Create Metric",
     "href": "/resources/metric/create_metric"
   },
   "fetch_metric": {
-    "title": "resources/metric/Fetch Metric",
+    "title": "Fetch Metric",
     "href": "/resources/metric/fetch_metric"
   },
   "list_metrics": {
-    "title": "resources/metric/List Metrics",
+    "title": "List Metrics",
     "href": "/resources/metric/list_metrics"
   }
 }

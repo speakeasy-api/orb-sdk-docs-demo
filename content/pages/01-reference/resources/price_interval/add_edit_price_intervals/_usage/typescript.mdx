@@ -2,9 +2,9 @@
 import { Orb } from "orb-billing";
 import { AddEditPriceIntervalsRequest } from "orb-billing/dist/sdk/models/operations";
 import {
-  AddEditPriceIntervalParams,
-  AddPriceIntervalParams,
-  EditPriceIntervalParams,
+  AddEditPriceIntervalParams1,
+  AddPriceIntervalParams1,
+  EditPriceIntervalParams1,
   PriceIntervalFixedFeeQuantityTransitionParams,
 } from "orb-billing/dist/sdk/models/shared";
 
@@ -15,7 +15,7 @@ import {
     },
   });
 const subscriptionId: string = "string";
-const addEditPriceIntervalParams: AddEditPriceIntervalParams = {
+const addEditPriceIntervalParams1: AddEditPriceIntervalParams1 = {
   add: [
     {
       discounts: [
@@ -51,7 +51,7 @@ const addEditPriceIntervalParams: AddEditPriceIntervalParams = {
   ],
 };
 
-  const res = await sdk.priceInterval.addEditPriceIntervals(subscriptionId, addEditPriceIntervalParams);
+  const res = await sdk.priceInterval.addEditPriceIntervals(subscriptionId, addEditPriceIntervalParams1);
 
   if (res.statusCode == 200) {
     // handle response

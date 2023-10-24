@@ -8,9 +8,9 @@ s = orb.Orb(
 )
 
 
-res = s.price_interval.add_edit_price_intervals(subscription_id='string', add_edit_price_interval_params1=shared.AddEditPriceIntervalParams1(
+res = s.price_interval.add_edit_price_intervals(subscription_id='string', add_edit_price_interval_params=shared.AddEditPriceIntervalParams(
     add=[
-        shared.AddPriceIntervalParams1(
+        shared.AddPriceIntervalParams(
             discounts=[
                 shared.AmountDiscountCreationParams(
                     amount_discount=10.00,
@@ -47,7 +47,7 @@ res = s.price_interval.add_edit_price_intervals(subscription_id='string', add_ed
         ),
     ],
     edit=[
-        shared.EditPriceIntervalParams1(
+        shared.EditPriceIntervalParams(
         shared.EditPriceIntervalParamsEndDateEndDate.END_OF_TERM,
             fixed_fee_quantity_transitions=[
                 shared.PriceIntervalFixedFeeQuantityTransitionParams(
