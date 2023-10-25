@@ -1,10 +1,10 @@
 {
   "fetch_credit_note": {
-    "title": "Fetch Credit Note",
+    "title": "resources/credit_note/Fetch Credit Note",
     "href": "/resources/credit_note/fetch_credit_note"
   },
   "list_credit_notes": {
-    "title": "List Credit Notes",
+    "title": "resources/credit_note/List Credit Notes",
     "href": "/resources/credit_note/list_credit_notes"
   }
 }

@@ -1,34 +1,34 @@
 {
   "create_invoice": {
-    "title": "Create Invoice",
+    "title": "resources/invoice/Create Invoice",
     "href": "/resources/invoice/create_invoice"
   },
   "create_invoice_line_item": {
-    "title": "Create Invoice Line Item",
+    "title": "resources/invoice/Create Invoice Line Item",
     "href": "/resources/invoice/create_invoice_line_item"
   },
   "fetch_invoice": {
-    "title": "Fetch Invoice",
+    "title": "resources/invoice/Fetch Invoice",
     "href": "/resources/invoice/fetch_invoice"
   },
   "fetch_upcoming_invoice": {
-    "title": "Fetch Upcoming Invoice",
+    "title": "resources/invoice/Fetch Upcoming Invoice",
     "href": "/resources/invoice/fetch_upcoming_invoice"
   },
   "issue_invoice": {
-    "title": "Issue Invoice",
+    "title": "resources/invoice/Issue Invoice",
     "href": "/resources/invoice/issue_invoice"
   },
   "list_invoices": {
-    "title": "List Invoices",
+    "title": "resources/invoice/List Invoices",
     "href": "/resources/invoice/list_invoices"
   },
   "mark_invoice_as_paid": {
-    "title": "Mark Invoice As Paid",
+    "title": "resources/invoice/Mark Invoice As Paid",
     "href": "/resources/invoice/mark_invoice_as_paid"
   },
   "void_invoice": {
-    "title": "Void Invoice",
+    "title": "resources/invoice/Void Invoice",
     "href": "/resources/invoice/void_invoice"
   }
 }

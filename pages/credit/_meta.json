@@ -1,26 +1,26 @@
 {
-  "create_ledger_entry": {
-    "title": "Create Ledger Entry",
-    "href": "/resources/credit/create_ledger_entry"
-  },
   "create_ledger_entry_external_id": {
-    "title": "Create Ledger Entry External Id",
+    "title": "resources/credit/Create Ledger Entry External Id",
     "href": "/resources/credit/create_ledger_entry_external_id"
   },
+  "create_ledger_entry": {
+    "title": "resources/credit/Create Ledger Entry",
+    "href": "/resources/credit/create_ledger_entry"
+  },
   "fetch_customer_credits": {
-    "title": "Fetch Customer Credits",
+    "title": "resources/credit/Fetch Customer Credits",
     "href": "/resources/credit/fetch_customer_credits"
   },
   "fetch_customer_credits_external_id": {
-    "title": "Fetch Customer Credits External Id",
+    "title": "resources/credit/Fetch Customer Credits External Id",
     "href": "/resources/credit/fetch_customer_credits_external_id"
   },
   "fetch_customer_credits_ledger": {
-    "title": "Fetch Customer Credits Ledger",
+    "title": "resources/credit/Fetch Customer Credits Ledger",
     "href": "/resources/credit/fetch_customer_credits_ledger"
   },
   "fetch_customer_credits_ledger_external_id": {
-    "title": "Fetch Customer Credits Ledger External Id",
+    "title": "resources/credit/Fetch Customer Credits Ledger External Id",
     "href": "/resources/credit/fetch_customer_credits_ledger_external_id"
   }
 }

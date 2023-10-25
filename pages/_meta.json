@@ -16,55 +16,55 @@
     "type": "separator"
   },
   "availability": {
-    "title": "Availability",
+    "title": "resources/Availability",
     "href": "/resources/availability"
   },
   "coupon": {
-    "title": "Coupon",
+    "title": "resources/Coupon",
     "href": "/resources/coupon"
   },
   "credit": {
-    "title": "Credit",
+    "title": "resources/Credit",
     "href": "/resources/credit"
   },
   "credit_note": {
-    "title": "Credit Note",
+    "title": "resources/Credit Note",
     "href": "/resources/credit_note"
   },
   "customer": {
-    "title": "Customer",
+    "title": "resources/Customer",
     "href": "/resources/customer"
   },
   "event": {
-    "title": "Event",
+    "title": "resources/Event",
     "href": "/resources/event"
   },
   "invoice": {
-    "title": "Invoice",
+    "title": "resources/Invoice",
     "href": "/resources/invoice"
   },
   "item": {
-    "title": "Item",
+    "title": "resources/Item",
     "href": "/resources/item"
   },
   "metric": {
-    "title": "Metric",
+    "title": "resources/Metric",
     "href": "/resources/metric"
   },
   "plan": {
-    "title": "Plan",
+    "title": "resources/Plan",
     "href": "/resources/plan"
   },
   "price": {
-    "title": "Price",
+    "title": "resources/Price",
     "href": "/resources/price"
   },
   "price_interval": {
-    "title": "Price Interval",
+    "title": "resources/Price Interval",
     "href": "/resources/price_interval"
   },
   "subscription": {
-    "title": "Subscription",
+    "title": "resources/Subscription",
     "href": "/resources/subscription"
   }
 }
