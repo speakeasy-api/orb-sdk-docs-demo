@@ -1,22 +1,22 @@
 {
-  "archive_coupon": {
-    "title": "resources/coupon/Archive Coupon",
-    "href": "/resources/coupon/archive_coupon"
+  "archive": {
+    "title": "resources/coupon/Archive",
+    "href": "/resources/coupon/archive"
   },
-  "create_coupon": {
-    "title": "resources/coupon/Create Coupon",
-    "href": "/resources/coupon/create_coupon"
+  "create": {
+    "title": "resources/coupon/Create",
+    "href": "/resources/coupon/create"
   },
-  "fetch_coupon": {
-    "title": "resources/coupon/Fetch Coupon",
-    "href": "/resources/coupon/fetch_coupon"
+  "fetch": {
+    "title": "resources/coupon/Fetch",
+    "href": "/resources/coupon/fetch"
   },
-  "list_coupons": {
-    "title": "resources/coupon/List Coupons",
-    "href": "/resources/coupon/list_coupons"
+  "list": {
+    "title": "resources/coupon/List",
+    "href": "/resources/coupon/list"
   },
-  "list_coupon_subscriptions": {
-    "title": "resources/coupon/List Coupon Subscriptions",
-    "href": "/resources/coupon/list_coupon_subscriptions"
+  "list_subscriptions": {
+    "title": "resources/coupon/List Subscriptions",
+    "href": "/resources/coupon/list_subscriptions"
   }
 }

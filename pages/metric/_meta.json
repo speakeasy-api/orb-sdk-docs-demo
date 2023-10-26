@@ -1,14 +1,14 @@
 {
-  "create_metric": {
-    "title": "resources/metric/Create Metric",
-    "href": "/resources/metric/create_metric"
+  "create": {
+    "title": "resources/metric/Create",
+    "href": "/resources/metric/create"
   },
-  "fetch_metric": {
-    "title": "resources/metric/Fetch Metric",
-    "href": "/resources/metric/fetch_metric"
+  "fetch": {
+    "title": "resources/metric/Fetch",
+    "href": "/resources/metric/fetch"
   },
-  "list_metrics": {
-    "title": "resources/metric/List Metrics",
-    "href": "/resources/metric/list_metrics"
+  "list": {
+    "title": "resources/metric/List",
+    "href": "/resources/metric/list"
   }
 }

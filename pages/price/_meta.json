@@ -1,18 +1,18 @@
 {
-  "create_price": {
-    "title": "resources/price/Create Price",
-    "href": "/resources/price/create_price"
+  "create": {
+    "title": "resources/price/Create",
+    "href": "/resources/price/create"
   },
-  "fetch_price": {
-    "title": "resources/price/Fetch Price",
-    "href": "/resources/price/fetch_price"
+  "fetch": {
+    "title": "resources/price/Fetch",
+    "href": "/resources/price/fetch"
   },
-  "fetch_price_external_id": {
-    "title": "resources/price/Fetch Price External Id",
-    "href": "/resources/price/fetch_price_external_id"
+  "fetch_by_external_id": {
+    "title": "resources/price/Fetch By External Id",
+    "href": "/resources/price/fetch_by_external_id"
   },
-  "list_prices": {
-    "title": "resources/price/List Prices",
-    "href": "/resources/price/list_prices"
+  "list": {
+    "title": "resources/price/List",
+    "href": "/resources/price/list"
   }
 }

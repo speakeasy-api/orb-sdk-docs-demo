@@ -1,51 +1,51 @@
 {
-  "amend_usage": {
-    "title": "resources/customer/Amend Usage",
-    "href": "/resources/customer/amend_usage"
+  "amend": {
+    "title": "resources/customer/Amend",
+    "href": "/resources/customer/amend"
   },
-  "amend_usage_external_customer_id": {
-    "title": "resources/customer/Amend Usage External Customer Id",
-    "href": "/resources/customer/amend_usage_external_customer_id"
+  "amend_by_external_id": {
+    "title": "resources/customer/Amend By External Id",
+    "href": "/resources/customer/amend_by_external_id"
   },
-  "create_customer": {
-    "title": "resources/customer/Create Customer",
-    "href": "/resources/customer/create_customer"
+  "create": {
+    "title": "resources/customer/Create",
+    "href": "/resources/customer/create"
   },
-  "create_customer_balance_transaction": {
-    "title": "resources/customer/Create Customer Balance Transaction",
-    "href": "/resources/customer/create_customer_balance_transaction"
+  "create_balance_transaction": {
+    "title": "resources/customer/Create Balance Transaction",
+    "href": "/resources/customer/create_balance_transaction"
   },
-  "delete_customer": {
-    "title": "resources/customer/Delete Customer",
-    "href": "/resources/customer/delete_customer"
+  "delete": {
+    "title": "resources/customer/Delete",
+    "href": "/resources/customer/delete"
   },
-  "fetch_customer": {
-    "title": "resources/customer/Fetch Customer",
-    "href": "/resources/customer/fetch_customer"
+  "fetch": {
+    "title": "resources/customer/Fetch",
+    "href": "/resources/customer/fetch"
   },
-  "fetch_customer_external_id": {
-    "title": "resources/customer/Fetch Customer External Id",
-    "href": "/resources/customer/fetch_customer_external_id"
+  "fetch_by_external_id": {
+    "title": "resources/customer/Fetch By External Id",
+    "href": "/resources/customer/fetch_by_external_id"
   },
-  "fetch_customer_costs": {
-    "title": "resources/customer/Fetch Customer Costs",
-    "href": "/resources/customer/fetch_customer_costs"
+  "fetch_costs": {
+    "title": "resources/customer/Fetch Costs",
+    "href": "/resources/customer/fetch_costs"
   },
-  "fetch_customer_costs_external_id": {
-    "title": "resources/customer/Fetch Customer Costs External Id",
-    "href": "/resources/customer/fetch_customer_costs_external_id"
+  "fetch_costs_by_external_id": {
+    "title": "resources/customer/Fetch Costs By External Id",
+    "href": "/resources/customer/fetch_costs_by_external_id"
   },
-  "list_customers": {
-    "title": "resources/customer/List Customers",
-    "href": "/resources/customer/list_customers"
+  "list": {
+    "title": "resources/customer/List",
+    "href": "/resources/customer/list"
   },
   "list_balance_transactions": {
     "title": "resources/customer/List Balance Transactions",
     "href": "/resources/customer/list_balance_transactions"
   },
-  "update_customer_external_id": {
-    "title": "resources/customer/Update Customer External Id",
-    "href": "/resources/customer/update_customer_external_id"
+  "update_by_external_id": {
+    "title": "resources/customer/Update By External Id",
+    "href": "/resources/customer/update_by_external_id"
   },
   "update_customer": {
     "title": "resources/customer/Update Customer",
