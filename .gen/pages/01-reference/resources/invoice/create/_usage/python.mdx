@@ -1,0 +1,38 @@
+```python Create.py
+import orb
+import dateutil.parser
+from orb.models import shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+req = shared.CreateOneOffInvoiceParams(
+    currency='USD',
+    customer_id='4khy3nwzktxv7',
+    external_customer_id='external-customer-id',
+    invoice_date=dateutil.parser.isoparse('2023-09-22'),
+    line_items=[
+        shared.InvoiceLineItemParams(
+            end_date=dateutil.parser.parse('2023-09-22').date(),
+            item_id='4khy3nwzktxv7',
+            model_type=shared.InvoiceLineItemParamsModelType.UNIT,
+            name='Line Item Name',
+            quantity=1,
+            start_date=dateutil.parser.parse('2023-09-22').date(),
+            unit_config=shared.UnitConfig(
+                unit_amount='string',
+            ),
+        ),
+    ],
+    memo='An optional memo for my invoice.',
+    net_terms=0,
+    will_auto_issue=False,
+)
+
+res = s.invoice.create(req)
+
+if res.invoice is not None:
+    # handle response
+    pass
+```

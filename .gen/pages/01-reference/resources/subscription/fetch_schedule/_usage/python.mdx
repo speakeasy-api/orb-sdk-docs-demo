@@ -1,0 +1,21 @@
+```python FetchSchedule.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.subscription.fetch_schedule(subscription_id='string', cursor='string', limit=697631, start_date_gt=dateutil.parser.isoparse('2021-04-19T17:05:15.498Z'), start_date_gte=dateutil.parser.isoparse('2021-03-07T22:43:30.934Z'), start_date_lt=dateutil.parser.isoparse('2023-11-28T22:34:56.363Z'), start_date_lte=dateutil.parser.isoparse('2023-01-01T02:37:45.021Z'))
+
+if res.subscription_schedule_items is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

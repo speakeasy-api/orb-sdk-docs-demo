@@ -1,0 +1,25 @@
+```typescript Create.ts
+import { Orb } from "orb-billing";
+import { NewSubscriptionExternalMarketplace } from "orb-billing/dist/sdk/models/shared";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.subscription.create({
+    externalPlanId: "ZMwNQefe7J3ecf7W",
+    metadata: {},
+    planId: "ZMwNQefe7J3ecf7W",
+    priceOverrides: [
+      "string",
+    ],
+  });
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

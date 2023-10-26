@@ -1,0 +1,20 @@
+```python List.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.price.list(cursor='string', limit=135218)
+
+if res.prices is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

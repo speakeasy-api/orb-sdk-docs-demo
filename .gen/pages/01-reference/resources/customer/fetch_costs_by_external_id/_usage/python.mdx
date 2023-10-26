@@ -1,0 +1,16 @@
+```python FetchCostsByExternalId.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.customer.fetch_costs_by_external_id(external_customer_id='string', group_by='string', timeframe_end=dateutil.parser.isoparse('2022-03-01T05:00:00Z'), timeframe_start=dateutil.parser.isoparse('2022-02-01T05:00:00Z'), view_mode=operations.FetchCustomerCostsExternalIDViewModeViewMode.CUMULATIVE)
+
+if res.customer_costs is not None:
+    # handle response
+    pass
+```

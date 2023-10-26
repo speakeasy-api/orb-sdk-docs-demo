@@ -1,0 +1,19 @@
+```python FetchLedger.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+req = operations.FetchCustomerCreditsLedgerRequest(
+    customer_id='string',
+)
+
+res = s.credit.fetch_ledger(req)
+
+if res.credit_ledger_entries is not None:
+    # handle response
+    pass
+```

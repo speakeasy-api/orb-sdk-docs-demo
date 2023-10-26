@@ -1,0 +1,20 @@
+```python Amend.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.event.amend(event_id='string', amended_event=shared.AmendedEvent(
+    event_name='string',
+    properties=shared.AmendedEventProperties(),
+    timestamp=dateutil.parser.isoparse('2020-12-09T16:09:53Z'),
+))
+
+if res.amend_event_result is not None:
+    # handle response
+    pass
+```

@@ -1,0 +1,19 @@
+```typescript Fetch.ts
+import { Orb } from "orb-billing";
+import { FetchBackfillRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const backfillId: string = "string";
+
+  const res = await sdk.event.fetch(backfillId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

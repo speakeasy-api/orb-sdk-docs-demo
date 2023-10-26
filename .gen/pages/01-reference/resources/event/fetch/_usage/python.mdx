@@ -1,0 +1,15 @@
+```python Fetch.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.event.fetch(backfill_id='string')
+
+if res.backfill is not None:
+    # handle response
+    pass
+```

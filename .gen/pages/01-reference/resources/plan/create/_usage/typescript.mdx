@@ -1,0 +1,24 @@
+```typescript Create.ts
+import { Orb } from "orb-billing";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.plan.create({
+    currency: "US Dollar",
+    metadata: {},
+    name: "string",
+    prices: [
+      "string",
+    ],
+  });
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

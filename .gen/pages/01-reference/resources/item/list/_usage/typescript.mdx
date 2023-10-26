@@ -1,0 +1,24 @@
+```typescript List.ts
+import { Orb } from "orb-billing";
+import { ListItemsRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const cursor: string = "string";
+const limit: number = 925597;
+
+  const res = await sdk.item.list(cursor, limit);
+
+  if (res.statusCode == 200) {
+    do {
+      // handle items
+
+      res = res.next();
+    } while (res);
+  }
+})();
+```

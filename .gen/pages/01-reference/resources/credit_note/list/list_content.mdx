@@ -1,0 +1,26 @@
+## List
+
+Get a paginated list of CreditNotes. Users can also filter by
+customer_id, subscription_id, or external_customer_id. The credit notes will be returned
+in reverse chronological order by `creation_time`.
+
+{/* rendered from operation template */}
+
+import {LanguageOperation} from "/content/languages";
+import {LanguageSwitch} from "/content/languages";
+import PythonParameters from "./_parameters/python.mdx";
+import PythonResponse from "./_response/python.mdx";
+import PythonUsage from "./_usage/python.mdx";
+import TypescriptParameters from "./_parameters/typescript.mdx";
+import TypescriptResponse from "./_response/typescript.mdx";
+import TypescriptUsage from "./_usage/typescript.mdx";
+
+export const Operation = () => {
+    const python = <LanguageOperation parameters={<PythonParameters/>} response={<PythonResponse/>} usage={<PythonUsage/>}/>
+    const typescript = <LanguageOperation parameters={<TypescriptParameters/>} response={<TypescriptResponse/>} usage={<TypescriptUsage/>}/>
+    return <LanguageSwitch langToContent={{python, typescript}}/>
+}
+
+<Operation />
+
+{/* end rendered section */}

@@ -1,0 +1,22 @@
+```typescript List.ts
+import { Orb } from "orb-billing";
+import { ListPlansStatusStatus } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.plan.list({});
+
+  if (res.statusCode == 200) {
+    do {
+      // handle items
+
+      res = res.next();
+    } while (res);
+  }
+})();
+```

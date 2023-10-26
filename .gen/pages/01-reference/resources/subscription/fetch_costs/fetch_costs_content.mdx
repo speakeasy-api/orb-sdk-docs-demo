@@ -1,0 +1,30 @@
+## Fetch Costs
+
+This endpoint is used to fetch a day-by-day snapshot of a subscription's costs in Orb, calculated by applying
+pricing information to the underlying usage (see the [subscription usage endpoint](fetch-subscription-usage) to
+fetch usage per metric, in usage units rather than a currency).
+
+The semantics of this endpoint exactly mirror those of [fetching a customer's costs](fetch-customer-costs). Use this
+endpoint to limit your analysis of costs to a specific subscription for the customer (e.g. to de-aggregate costs
+when a customer's subscription has started and stopped on the same day).
+
+{/* rendered from operation template */}
+
+import {LanguageOperation} from "/content/languages";
+import {LanguageSwitch} from "/content/languages";
+import PythonParameters from "./_parameters/python.mdx";
+import PythonResponse from "./_response/python.mdx";
+import PythonUsage from "./_usage/python.mdx";
+import TypescriptParameters from "./_parameters/typescript.mdx";
+import TypescriptResponse from "./_response/typescript.mdx";
+import TypescriptUsage from "./_usage/typescript.mdx";
+
+export const Operation = () => {
+    const python = <LanguageOperation parameters={<PythonParameters/>} response={<PythonResponse/>} usage={<PythonUsage/>}/>
+    const typescript = <LanguageOperation parameters={<TypescriptParameters/>} response={<TypescriptResponse/>} usage={<TypescriptUsage/>}/>
+    return <LanguageSwitch langToContent={{python, typescript}}/>
+}
+
+<Operation />
+
+{/* end rendered section */}

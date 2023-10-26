@@ -1,0 +1,20 @@
+```python List.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.coupon.list(cursor='string', limit=592845, redemption_code='string', show_archived=False)
+
+if res.coupons is not None:
+    while True:
+        # handle items
+
+        res = res.Next()
+        if res is None:
+            break
+
+```

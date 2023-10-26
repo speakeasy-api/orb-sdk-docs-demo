@@ -1,0 +1,20 @@
+```typescript AddByExternalId.ts
+import { Orb } from "orb-billing";
+import { CreateLedgerEntryExternalIdRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const externalCustomerId: string = "string";
+const requestBody: any = "string";
+
+  const res = await sdk.credit.addByExternalId(externalCustomerId, requestBody);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

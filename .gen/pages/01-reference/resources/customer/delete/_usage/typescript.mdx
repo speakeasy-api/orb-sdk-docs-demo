@@ -1,0 +1,19 @@
+```typescript Delete.ts
+import { Orb } from "orb-billing";
+import { DeleteCustomerRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const customerId: string = "string";
+
+  const res = await sdk.customer.delete(customerId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

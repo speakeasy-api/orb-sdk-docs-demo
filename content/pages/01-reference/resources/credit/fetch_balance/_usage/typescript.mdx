@@ -1,0 +1,25 @@
+```typescript FetchBalance.ts
+import { Orb } from "orb-billing";
+import { FetchCustomerCreditsRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const customerId: string = "string";
+const cursor: string = "string";
+const limit: number = 715190;
+
+  const res = await sdk.credit.fetchBalance(customerId, cursor, limit);
+
+  if (res.statusCode == 200) {
+    do {
+      // handle items
+
+      res = res.next();
+    } while (res);
+  }
+})();
+```

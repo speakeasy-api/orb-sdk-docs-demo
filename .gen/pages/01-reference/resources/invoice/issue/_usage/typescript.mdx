@@ -1,0 +1,19 @@
+```typescript Issue.ts
+import { Orb } from "orb-billing";
+import { IssueInvoiceRequest } from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+const invoiceId: string = "string";
+
+  const res = await sdk.invoice.issue(invoiceId);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```

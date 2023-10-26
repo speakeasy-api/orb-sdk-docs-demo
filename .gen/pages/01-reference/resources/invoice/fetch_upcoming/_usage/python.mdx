@@ -1,0 +1,15 @@
+```python FetchUpcoming.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.invoice.fetch_upcoming(subscription_id='string')
+
+if res.upcoming_invoice is not None:
+    # handle response
+    pass
+```

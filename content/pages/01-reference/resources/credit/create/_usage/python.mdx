@@ -1,0 +1,21 @@
+```python Create.py
+import orb
+import dateutil.parser
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.credit.create(customer_id='string', add_credit_ledger_entry_request_params=shared.AddVoidCreditLedgerEntryRequestParams(
+    amount=5448.83,
+    block_id='string',
+    entry_type=shared.AddVoidCreditLedgerEntryRequestParamsEntryType.VOID,
+    metadata=shared.AddVoidCreditLedgerEntryRequestParamsMetadata(),
+))
+
+if res.credit_ledger_entry is not None:
+    # handle response
+    pass
+```

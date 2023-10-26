@@ -1,0 +1,15 @@
+```python Issue.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.invoice.issue(invoice_id='string')
+
+if res.invoice is not None:
+    # handle response
+    pass
+```

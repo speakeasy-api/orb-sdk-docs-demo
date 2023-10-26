@@ -1,0 +1,21 @@
+```typescript List.ts
+import { Orb } from "orb-billing";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.customer.list({});
+
+  if (res.statusCode == 200) {
+    do {
+      // handle items
+
+      res = res.next();
+    } while (res);
+  }
+})();
+```

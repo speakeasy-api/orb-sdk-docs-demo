@@ -1,0 +1,15 @@
+```python Fetch.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.credit_note.fetch(credit_note_id='string')
+
+if res.credit_note is not None:
+    # handle response
+    pass
+```

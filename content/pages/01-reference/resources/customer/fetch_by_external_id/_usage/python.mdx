@@ -1,0 +1,15 @@
+```python FetchByExternalId.py
+import orb
+from orb.models import operations, shared
+
+s = orb.Orb(
+    api_key_auth="",
+)
+
+
+res = s.customer.fetch_by_external_id(external_customer_id='string')
+
+if res.customer is not None:
+    # handle response
+    pass
+```

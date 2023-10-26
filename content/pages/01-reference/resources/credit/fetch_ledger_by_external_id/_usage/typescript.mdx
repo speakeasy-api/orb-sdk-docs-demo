@@ -1,0 +1,23 @@
+```typescript FetchLedgerByExternalId.ts
+import { Orb } from "orb-billing";
+import {
+  FetchCustomerCreditsLedgerExternalIdEntryStatusEntryStatus,
+  FetchCustomerCreditsLedgerExternalIdEntryTypeEntryType,
+} from "orb-billing/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new Orb({
+    security: {
+      apiKeyAuth: "",
+    },
+  });
+
+  const res = await sdk.credit.fetchLedgerByExternalId({
+    externalCustomerId: "string",
+  });
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```
