@@ -25,6 +25,7 @@ python:
   installationURL: orb-billing
   maxMethodParams: 10
   packageName: orb-billing
+  published: true
 typescript:
   version: 1.21.0
   author: orbcorp
