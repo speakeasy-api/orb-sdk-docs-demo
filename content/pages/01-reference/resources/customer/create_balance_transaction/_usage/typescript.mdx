@@ -17,6 +17,7 @@ const newCustomerBalanceTransaction: NewCustomerBalanceTransaction = {
 
   const res = await sdk.customer.createBalanceTransaction(customerId, newCustomerBalanceTransaction);
 
+
   if (res.statusCode == 200) {
     // handle response
   }

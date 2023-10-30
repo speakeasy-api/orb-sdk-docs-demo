@@ -1,22 +1,17 @@
 {
   "archive": {
-    "title": "resources/coupon/Archive",
-    "href": "/resources/coupon/archive"
+    "title": "Archive"
   },
   "create": {
-    "title": "resources/coupon/Create",
-    "href": "/resources/coupon/create"
+    "title": "Create"
   },
   "fetch": {
-    "title": "resources/coupon/Fetch",
-    "href": "/resources/coupon/fetch"
+    "title": "Fetch"
   },
   "list": {
-    "title": "resources/coupon/List",
-    "href": "/resources/coupon/list"
+    "title": "List"
   },
   "list_subscriptions": {
-    "title": "resources/coupon/List Subscriptions",
-    "href": "/resources/coupon/list_subscriptions"
+    "title": "List Subscriptions"
   }
 }

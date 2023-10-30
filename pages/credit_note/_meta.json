@@ -1,10 +1,8 @@
 {
   "fetch": {
-    "title": "resources/credit_note/Fetch",
-    "href": "/resources/credit_note/fetch"
+    "title": "Fetch"
   },
   "list": {
-    "title": "resources/credit_note/List",
-    "href": "/resources/credit_note/list"
+    "title": "List"
   }
 }

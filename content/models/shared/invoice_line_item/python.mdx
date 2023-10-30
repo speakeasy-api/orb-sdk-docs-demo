@@ -4,7 +4,7 @@ import Collapsible from "/components/Collapsible";
 ##### `amount` *{`str`}*
 The final amount after any discounts or minimums.
 <br/>
-**Example value:** `7.00`
+**Example:** `7.00`
 
 ---
 ##### `discount` *{`Optional[Union[PercentageDiscount, TrialDiscount, UsageDiscount, AmountDiscount]]`}*
@@ -15,7 +15,7 @@ The final amount after any discounts or minimums.
 ##### `end_date` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
 The end date of the range of time applied for this line item's price.
 <br/>
-**Example value:** `2022-02-01T08:00:00+00:00`
+**Example:** `2022-02-01T08:00:00+00:00`
 
 ---
 ##### `grouping` *{`Optional[str]`}*
@@ -45,7 +45,7 @@ A unique ID for this line item.
 ##### `name` *{`str`}*
 The name of the price associated with this line item.
 <br/>
-**Example value:** `Fixed Fee`
+**Example:** `Fixed Fee`
 
 ---
 ##### `price` *{`Optional[Union[UnitPrice, PackagePrice, MatrixPrice, TieredPrice, TieredBpsPrice, BpsPrice, BulkBpsPrice, BulkPrice, TestRatingFunctionPrice, FivetranExamplePrice, ThresholdTotalAmountPrice, TieredPackagePrice, TieredWithMinimumPrice, PackageWithAllocationPrice]]`}*
@@ -55,13 +55,13 @@ The name of the price associated with this line item.
 ---
 ##### `quantity` *{`float`}*
 <br/>
-**Example value:** `1`
+**Example:** `1`
 
 ---
 ##### `start_date` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
 The start date of the range of time applied for this line item's price.
 <br/>
-**Example value:** `2022-02-01T08:00:00+00:00`
+**Example:** `2022-02-01T08:00:00+00:00`
 
 ---
 ##### `sub_line_items` *{`List[Union[MatrixSubLineItem, TierSubLineItem, OtherSubLineItem]]`}*
@@ -73,7 +73,7 @@ For complex pricing structures, the line item can be broken down further in `sub
 ##### `subtotal` *{`str`}*
 The line amount before any line item\-specific discounts or minimums.
 <br/>
-**Example value:** `9.00`
+**Example:** `9.00`
 
 ---
 ##### `tax_amounts` *{`List[TaxAmount]`}*

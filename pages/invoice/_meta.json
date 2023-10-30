@@ -1,34 +1,26 @@
 {
   "create": {
-    "title": "resources/invoice/Create",
-    "href": "/resources/invoice/create"
+    "title": "Create"
   },
   "create_line_item": {
-    "title": "resources/invoice/Create Line Item",
-    "href": "/resources/invoice/create_line_item"
+    "title": "Create Line Item"
   },
   "fetch": {
-    "title": "resources/invoice/Fetch",
-    "href": "/resources/invoice/fetch"
+    "title": "Fetch"
   },
   "fetch_upcoming": {
-    "title": "resources/invoice/Fetch Upcoming",
-    "href": "/resources/invoice/fetch_upcoming"
+    "title": "Fetch Upcoming"
   },
   "issue": {
-    "title": "resources/invoice/Issue",
-    "href": "/resources/invoice/issue"
+    "title": "Issue"
   },
   "list": {
-    "title": "resources/invoice/List",
-    "href": "/resources/invoice/list"
+    "title": "List"
   },
   "mark_invoice_as_paid": {
-    "title": "resources/invoice/Mark Invoice As Paid",
-    "href": "/resources/invoice/mark_invoice_as_paid"
+    "title": "Mark Invoice As Paid"
   },
   "void": {
-    "title": "resources/invoice/Void",
-    "href": "/resources/invoice/void"
+    "title": "Void"
   }
 }

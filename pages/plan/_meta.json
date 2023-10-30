@@ -1,26 +1,20 @@
 {
   "create": {
-    "title": "resources/plan/Create",
-    "href": "/resources/plan/create"
+    "title": "Create"
   },
   "fetch": {
-    "title": "resources/plan/Fetch",
-    "href": "/resources/plan/fetch"
+    "title": "Fetch"
   },
   "fetch_by_external_id": {
-    "title": "resources/plan/Fetch By External Id",
-    "href": "/resources/plan/fetch_by_external_id"
+    "title": "Fetch By External Id"
   },
   "list": {
-    "title": "resources/plan/List",
-    "href": "/resources/plan/list"
+    "title": "List"
   },
   "update_plan": {
-    "title": "resources/plan/Update Plan",
-    "href": "/resources/plan/update_plan"
+    "title": "Update Plan"
   },
   "update_plan_external": {
-    "title": "resources/plan/Update Plan External",
-    "href": "/resources/plan/update_plan_external"
+    "title": "Update Plan External"
   }
 }

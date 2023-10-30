@@ -16,6 +16,7 @@ const cancelSubscriptionParams: CancelSubscriptionParams = {
 
   const res = await sdk.subscription.cancel(subscriptionId, cancelSubscriptionParams);
 
+
   if (res.statusCode == 200) {
     // handle response
   }

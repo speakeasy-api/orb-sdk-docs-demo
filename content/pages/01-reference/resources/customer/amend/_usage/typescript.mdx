@@ -20,6 +20,7 @@ const timeframeStart: Date = new Date("2022-08-20T15:31:47.646Z");
 
   const res = await sdk.customer.amend(customerId, updateEvent, timeframeEnd, timeframeStart);
 
+
   if (res.statusCode == 200) {
     // handle response
   }

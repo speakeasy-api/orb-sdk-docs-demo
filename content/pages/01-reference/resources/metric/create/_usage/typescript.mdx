@@ -16,6 +16,7 @@ import { Orb } from "orb-billing";
     sql: "SELECT sum(bytes_downloaded) FROM events WHERE download_speed = 'fast'",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }

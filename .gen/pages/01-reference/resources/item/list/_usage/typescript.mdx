@@ -13,6 +13,7 @@ const limit: number = 925597;
 
   const res = await sdk.item.list(cursor, limit);
 
+
   if (res.statusCode == 200) {
     do {
       // handle items

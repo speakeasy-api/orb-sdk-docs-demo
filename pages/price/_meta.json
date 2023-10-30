@@ -1,18 +1,14 @@
 {
   "create": {
-    "title": "resources/price/Create",
-    "href": "/resources/price/create"
+    "title": "Create"
   },
   "fetch": {
-    "title": "resources/price/Fetch",
-    "href": "/resources/price/fetch"
+    "title": "Fetch"
   },
   "fetch_by_external_id": {
-    "title": "resources/price/Fetch By External Id",
-    "href": "/resources/price/fetch_by_external_id"
+    "title": "Fetch By External Id"
   },
   "list": {
-    "title": "resources/price/List",
-    "href": "/resources/price/list"
+    "title": "List"
   }
 }

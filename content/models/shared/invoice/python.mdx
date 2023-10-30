@@ -4,7 +4,7 @@ import Collapsible from "/components/Collapsible";
 ##### `amount_due` *{`str`}*
 This is the final amount required to be charged to the customer and reflects the application of the customer balance to the `total` of the invoice.
 <br/>
-**Example value:** `8.00`
+**Example:** `8.00`
 
 ---
 ##### `auto_collection` *{`AutoCollection`}*
@@ -20,7 +20,7 @@ This is the final amount required to be charged to the customer and reflects the
 ##### `created_at` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
 The creation time of the resource in Orb.
 <br/>
-**Example value:** `2022-05-01T07:01:31+00:00`
+**Example:** `2022-05-01T07:01:31+00:00`
 
 ---
 ##### `credit_notes` *{`List[CreditNoteSummary]`}*
@@ -32,7 +32,7 @@ A list of credit notes associated with the invoice
 ##### `currency` *{`str`}*
 An ISO 4217 currency string or `credits`
 <br/>
-**Example value:** `USD`
+**Example:** `USD`
 
 ---
 ##### `customer` *{`CustomerMinified`}*
@@ -63,7 +63,7 @@ An ISO 4217 currency string or `credits`
 ##### `due_date` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
 When the invoice payment is due.
 <br/>
-**Example value:** `2022-05-30T07:00:00+00:00`
+**Example:** `2022-05-30T07:00:00+00:00`
 
 ---
 ##### `eligible_to_issue_at` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
@@ -80,19 +80,19 @@ A URL for the invoice portal.
 ##### `invoice_date` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
 The scheduled date of the invoice
 <br/>
-**Example value:** `2022-05-01T07:00:00+00:00`
+**Example:** `2022-05-01T07:00:00+00:00`
 
 ---
 ##### `invoice_number` *{`str`}*
 Automatically generated invoice number to help track and reconcile invoices. Invoice numbers have a prefix such as `RFOBWG`. These can be sequential per account or customer.
 <br/>
-**Example value:** `JYEFHK-00001`
+**Example:** `JYEFHK-00001`
 
 ---
 ##### `invoice_pdf` *{`Optional[str]`}*
 The link to download the PDF representation of the `Invoice`.
 <br/>
-**Example value:** `https://assets.withorb.com/invoice/rUHdhmg45vY45DX/qEAeuYePaphGMdFb`
+**Example:** `https://assets.withorb.com/invoice/rUHdhmg45vY45DX/qEAeuYePaphGMdFb`
 
 ---
 ##### `issue_failed_at` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
@@ -168,7 +168,7 @@ If the invoice is in draft, this timestamp will reflect when the invoice is sche
 ##### `subtotal` *{`str`}*
 The total before any discounts and minimums are applied.
 <br/>
-**Example value:** `8.00`
+**Example:** `8.00`
 
 ---
 ##### `sync_failed_at` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)
@@ -178,7 +178,7 @@ If the invoice failed to sync, this will be the last time an external invoicing 
 ##### `total` *{`str`}*
 The total after any minimums and discounts have been applied.
 <br/>
-**Example value:** `8.00`
+**Example:** `8.00`
 
 ---
 ##### `voided_at` [*{ `date` }*](https://docs.python.org/3/library/datetime.html#date-objects)

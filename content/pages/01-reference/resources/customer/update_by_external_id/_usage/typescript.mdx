@@ -48,6 +48,7 @@ const editCustomer: EditCustomer = {
 
   const res = await sdk.customer.updateByExternalId(externalCustomerId, editCustomer);
 
+
   if (res.statusCode == 200) {
     // handle response
   }

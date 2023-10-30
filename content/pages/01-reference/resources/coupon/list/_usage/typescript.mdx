@@ -15,6 +15,7 @@ const showArchived: boolean = false;
 
   const res = await sdk.coupon.list(cursor, limit, redemptionCode, showArchived);
 
+
   if (res.statusCode == 200) {
     do {
       // handle items

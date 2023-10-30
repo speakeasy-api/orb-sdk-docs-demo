@@ -1,38 +1,29 @@
 {
   "amend": {
-    "title": "resources/event/Amend",
-    "href": "/resources/event/amend"
+    "title": "Amend"
   },
   "close_backfill": {
-    "title": "resources/event/Close Backfill",
-    "href": "/resources/event/close_backfill"
+    "title": "Close Backfill"
   },
   "create": {
-    "title": "resources/event/Create",
-    "href": "/resources/event/create"
+    "title": "Create"
   },
   "deprecate_event": {
-    "title": "resources/event/Deprecate Event",
-    "href": "/resources/event/deprecate_event"
+    "title": "Deprecate Event"
   },
   "fetch": {
-    "title": "resources/event/Fetch",
-    "href": "/resources/event/fetch"
+    "title": "Fetch"
   },
   "ingest": {
-    "title": "resources/event/Ingest",
-    "href": "/resources/event/ingest"
+    "title": "Ingest"
   },
   "list_backfills": {
-    "title": "resources/event/List Backfills",
-    "href": "/resources/event/list_backfills"
+    "title": "List Backfills"
   },
   "revert_backfill": {
-    "title": "resources/event/Revert Backfill",
-    "href": "/resources/event/revert_backfill"
+    "title": "Revert Backfill"
   },
   "search": {
-    "title": "resources/event/Search",
-    "href": "/resources/event/search"
+    "title": "Search"
   }
 }

@@ -14,7 +14,7 @@ Reset billing periods to be aligned with the plan change’s effective date or s
 ##### `change_date` *{`Optional[str]`}*
 The date that the plan change should take effect. This parameter can only be passed if the `change_option` is `requested_date`.
 <br/>
-**Example value:** `2017-07-21T17:32:28Z`
+**Example:** `2017-07-21T17:32:28Z`
 
 ---
 ##### `change_option` *{`ChangeOption`}*
@@ -32,19 +32,19 @@ Redemption code to be used for this subscription. If the coupon cannot be found 
 ##### `external_plan_id` *{`Optional[str]`}*
 The external_plan_id of the plan that the given subscription should be switched to. Note that either this property or `plan_id` must be specified.
 <br/>
-**Example value:** `ZMwNQefe7J3ecf7W`
+**Example:** `ZMwNQefe7J3ecf7W`
 
 ---
 ##### `initial_phase_order` *{`Optional[int]`}*
 The phase of the plan to start with
 <br/>
-**Example value:** `2`
+**Example:** `2`
 
 ---
 ##### `invoicing_threshold` *{`Optional[str]`}*
 When this subscription's accrued usage reaches this threshold, an invoice will be issued for the subscription. If not specified, invoices will only be issued at the end of the billing period.
 <br/>
-**Example value:** `10.00`
+**Example:** `10.00`
 
 ---
 ##### `per_credit_overage_amount` *{`Optional[str]`}*
@@ -53,7 +53,7 @@ When this subscription's accrued usage reaches this threshold, an invoice will b
 ##### `plan_id` *{`Optional[str]`}*
 The plan that the given subscription should be switched to. Note that either this property or `external_plan_id` must be specified.
 <br/>
-**Example value:** `ZMwNQefe7J3ecf7W`
+**Example:** `ZMwNQefe7J3ecf7W`
 
 ---
 ##### `price_overrides` *{`List[Union[OverrideUnitPrice, OverridePackagePrice, OverrideMatrixPrice, OverrideTieredPrice, OverrideTieredBpsPrice, OverrideBpsPrice, OverrideBulkBpsPrice, OverrideBulkPrice, OverrideTestRatingFunctionPrice, OverrideFivetranExamplePrice, OverrideThresholdTotalAmountPrice, OverrideTieredPackagePrice, OverrideTieredWithMinimumPrice, OverridePackageWithAllocationPrice]]`}*

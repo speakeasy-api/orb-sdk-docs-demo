@@ -13,6 +13,7 @@ const limit: number = 602763;
 
   const res = await sdk.creditNote.list(cursor, limit);
 
+
   if (res.statusCode == 200) {
     do {
       // handle items

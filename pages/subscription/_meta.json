@@ -1,54 +1,41 @@
 {
   "cancel": {
-    "title": "resources/subscription/Cancel",
-    "href": "/resources/subscription/cancel"
+    "title": "Cancel"
   },
   "create": {
-    "title": "resources/subscription/Create",
-    "href": "/resources/subscription/create"
+    "title": "Create"
   },
   "fetch": {
-    "title": "resources/subscription/Fetch",
-    "href": "/resources/subscription/fetch"
+    "title": "Fetch"
   },
   "fetch_costs": {
-    "title": "resources/subscription/Fetch Costs",
-    "href": "/resources/subscription/fetch_costs"
+    "title": "Fetch Costs"
   },
   "fetch_schedule": {
-    "title": "resources/subscription/Fetch Schedule",
-    "href": "/resources/subscription/fetch_schedule"
+    "title": "Fetch Schedule"
   },
   "fetch_usage": {
-    "title": "resources/subscription/Fetch Usage",
-    "href": "/resources/subscription/fetch_usage"
+    "title": "Fetch Usage"
   },
   "list": {
-    "title": "resources/subscription/List",
-    "href": "/resources/subscription/list"
+    "title": "List"
   },
   "schedule_plan_change": {
-    "title": "resources/subscription/Schedule Plan Change",
-    "href": "/resources/subscription/schedule_plan_change"
+    "title": "Schedule Plan Change"
   },
   "trigger_phase": {
-    "title": "resources/subscription/Trigger Phase",
-    "href": "/resources/subscription/trigger_phase"
+    "title": "Trigger Phase"
   },
   "unschedule_cancellation": {
-    "title": "resources/subscription/Unschedule Cancellation",
-    "href": "/resources/subscription/unschedule_cancellation"
+    "title": "Unschedule Cancellation"
   },
   "unschedule_fixed_fee_quantity": {
-    "title": "resources/subscription/Unschedule Fixed Fee Quantity",
-    "href": "/resources/subscription/unschedule_fixed_fee_quantity"
+    "title": "Unschedule Fixed Fee Quantity"
   },
   "unschedule_plan_change": {
-    "title": "resources/subscription/Unschedule Plan Change",
-    "href": "/resources/subscription/unschedule_plan_change"
+    "title": "Unschedule Plan Change"
   },
   "update_fixed_fee_quantity": {
-    "title": "resources/subscription/Update Fixed Fee Quantity",
-    "href": "/resources/subscription/update_fixed_fee_quantity"
+    "title": "Update Fixed Fee Quantity"
   }
 }

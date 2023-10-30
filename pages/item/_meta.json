@@ -1,10 +1,8 @@
 {
   "fetch": {
-    "title": "resources/item/Fetch",
-    "href": "/resources/item/fetch"
+    "title": "Fetch"
   },
   "list": {
-    "title": "resources/item/List",
-    "href": "/resources/item/list"
+    "title": "List"
   }
 }

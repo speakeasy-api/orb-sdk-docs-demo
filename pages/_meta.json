@@ -4,67 +4,52 @@
     "type": "separator"
   },
   "installation": {
-    "title": "Installation",
-    "href": "/installation"
+    "title": "Installation"
   },
   "pagination": {
-    "title": "Pagination",
-    "href": "/pagination"
+    "title": "Pagination"
   },
   "-- resources": {
     "title": "Resources",
     "type": "separator"
   },
   "availability": {
-    "title": "resources/Availability",
-    "href": "/resources/availability"
+    "title": "Availability"
   },
   "coupon": {
-    "title": "resources/Coupon",
-    "href": "/resources/coupon"
+    "title": "Coupon"
   },
   "credit": {
-    "title": "resources/Credit",
-    "href": "/resources/credit"
+    "title": "Credit"
   },
   "credit_note": {
-    "title": "resources/Credit Note",
-    "href": "/resources/credit_note"
+    "title": "Credit Note"
   },
   "customer": {
-    "title": "resources/Customer",
-    "href": "/resources/customer"
+    "title": "Customer"
   },
   "event": {
-    "title": "resources/Event",
-    "href": "/resources/event"
+    "title": "Event"
   },
   "invoice": {
-    "title": "resources/Invoice",
-    "href": "/resources/invoice"
+    "title": "Invoice"
   },
   "item": {
-    "title": "resources/Item",
-    "href": "/resources/item"
+    "title": "Item"
   },
   "metric": {
-    "title": "resources/Metric",
-    "href": "/resources/metric"
+    "title": "Metric"
   },
   "plan": {
-    "title": "resources/Plan",
-    "href": "/resources/plan"
+    "title": "Plan"
   },
   "price": {
-    "title": "resources/Price",
-    "href": "/resources/price"
+    "title": "Price"
   },
   "price_interval": {
-    "title": "resources/Price Interval",
-    "href": "/resources/price_interval"
+    "title": "Price Interval"
   },
   "subscription": {
-    "title": "resources/Subscription",
-    "href": "/resources/subscription"
+    "title": "Subscription"
   }
 }

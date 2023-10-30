@@ -19,6 +19,7 @@ const markAsPaidRequestParams: MarkAsPaidRequestParams = {
 
   const res = await sdk.invoice.markInvoiceAsPaid(invoiceId, markAsPaidRequestParams);
 
+
   if (res.statusCode == 200) {
     // handle response
   }

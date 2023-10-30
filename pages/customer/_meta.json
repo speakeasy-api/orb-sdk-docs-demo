@@ -1,54 +1,41 @@
 {
   "amend": {
-    "title": "resources/customer/Amend",
-    "href": "/resources/customer/amend"
+    "title": "Amend"
   },
   "amend_by_external_id": {
-    "title": "resources/customer/Amend By External Id",
-    "href": "/resources/customer/amend_by_external_id"
+    "title": "Amend By External Id"
   },
   "create": {
-    "title": "resources/customer/Create",
-    "href": "/resources/customer/create"
+    "title": "Create"
   },
   "create_balance_transaction": {
-    "title": "resources/customer/Create Balance Transaction",
-    "href": "/resources/customer/create_balance_transaction"
+    "title": "Create Balance Transaction"
   },
   "delete": {
-    "title": "resources/customer/Delete",
-    "href": "/resources/customer/delete"
+    "title": "Delete"
   },
   "fetch": {
-    "title": "resources/customer/Fetch",
-    "href": "/resources/customer/fetch"
+    "title": "Fetch"
   },
   "fetch_by_external_id": {
-    "title": "resources/customer/Fetch By External Id",
-    "href": "/resources/customer/fetch_by_external_id"
+    "title": "Fetch By External Id"
   },
   "fetch_costs": {
-    "title": "resources/customer/Fetch Costs",
-    "href": "/resources/customer/fetch_costs"
+    "title": "Fetch Costs"
   },
   "fetch_costs_by_external_id": {
-    "title": "resources/customer/Fetch Costs By External Id",
-    "href": "/resources/customer/fetch_costs_by_external_id"
+    "title": "Fetch Costs By External Id"
   },
   "list": {
-    "title": "resources/customer/List",
-    "href": "/resources/customer/list"
+    "title": "List"
   },
   "list_balance_transactions": {
-    "title": "resources/customer/List Balance Transactions",
-    "href": "/resources/customer/list_balance_transactions"
+    "title": "List Balance Transactions"
   },
   "update_by_external_id": {
-    "title": "resources/customer/Update By External Id",
-    "href": "/resources/customer/update_by_external_id"
+    "title": "Update By External Id"
   },
   "update_customer": {
-    "title": "resources/customer/Update Customer",
-    "href": "/resources/customer/update_customer"
+    "title": "Update Customer"
   }
 }

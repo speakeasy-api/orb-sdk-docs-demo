@@ -1,26 +1,20 @@
 {
   "add_by_external_id": {
-    "title": "resources/credit/Add By External Id",
-    "href": "/resources/credit/add_by_external_id"
+    "title": "Add By External Id"
   },
   "create": {
-    "title": "resources/credit/Create",
-    "href": "/resources/credit/create"
+    "title": "Create"
   },
   "fetch_balance": {
-    "title": "resources/credit/Fetch Balance",
-    "href": "/resources/credit/fetch_balance"
+    "title": "Fetch Balance"
   },
   "fetch_balance_by_external_id": {
-    "title": "resources/credit/Fetch Balance By External Id",
-    "href": "/resources/credit/fetch_balance_by_external_id"
+    "title": "Fetch Balance By External Id"
   },
   "fetch_ledger": {
-    "title": "resources/credit/Fetch Ledger",
-    "href": "/resources/credit/fetch_ledger"
+    "title": "Fetch Ledger"
   },
   "fetch_ledger_by_external_id": {
-    "title": "resources/credit/Fetch Ledger By External Id",
-    "href": "/resources/credit/fetch_ledger_by_external_id"
+    "title": "Fetch Ledger By External Id"
   }
 }

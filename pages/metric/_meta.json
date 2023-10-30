@@ -1,14 +1,11 @@
 {
   "create": {
-    "title": "resources/metric/Create",
-    "href": "/resources/metric/create"
+    "title": "Create"
   },
   "fetch": {
-    "title": "resources/metric/Fetch",
-    "href": "/resources/metric/fetch"
+    "title": "Fetch"
   },
   "list": {
-    "title": "resources/metric/List",
-    "href": "/resources/metric/list"
+    "title": "List"
   }
 }
