@@ -1,0 +1,11 @@
+import MethodPill from '/src/components/MethodPill';
+
+<MethodPill method="get" />
+## /subscriptions
+
+This endpoint returns a list of all subscriptions for an account as a [paginated](../reference/pagination) list,
+ordered starting from the most recently created subscription. For a full discussion of the subscription resource,
+see [Subscription](../guides/concepts#subscription).
+
+Subscriptions can be filtered to a single customer by
+passing in the `customer_id` query parameter or the `external_customer_id` query parameter.

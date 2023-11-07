@@ -1,9 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Metric*
 
-## Create
-
-This endpoint is used to create a [metric](../guides/concepts##metric) using a SQL string.
-See [SQL support](../guides/extensibility/advanced-metrics#sql-support)
-for a description of constructing SQL queries with examples.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

@@ -1,8 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Coupon*
 
-## Fetch
-
-This endpoint retrieves a coupon by its ID. To fetch coupons by their redemption code, use the
-[List coupons](list-coupons) endpoint with the redemption_code parameter.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

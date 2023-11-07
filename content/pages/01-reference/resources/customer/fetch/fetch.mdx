@@ -1,10 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Customer*
 
-## Fetch
-
-This endpoint is used to fetch customer details given an identifier. If the `Customer` is in the process of being deleted,
-only the properties `id` and `deleted: true` will be returned.
-
-See the [Customer resource](../guides/core-concepts.mdx#customer) for a full discussion of the Customer model.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

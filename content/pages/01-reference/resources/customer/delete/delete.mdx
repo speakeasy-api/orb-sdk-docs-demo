@@ -1,19 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Customer*
 
-## Delete
-
-This performs a deletion of this customer, its subscriptions, and its invoices.
-This operation is irreversible. Note that this is a _soft_ deletion, but the data
-will be inaccessible through the API and Orb dashboard. For hard-deletion, please
-reach out to the Orb team directly.
-
-**Note**: This operation happens asynchronously and can be expected to take a
-few minutes to propagate to related resources. However, querying for the customer on
-subsequent GET requests while deletion is in process will reflect its deletion with
-a `deleted: true` property. Once the customer deletion has been fully processed,
-the customer will not be returned in the API.
-
-
-On successful processing, this returns an empty dictionary (`{}`) in the API.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

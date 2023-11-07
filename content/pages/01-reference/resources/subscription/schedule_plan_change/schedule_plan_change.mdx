@@ -1,34 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Subscription*
 
-## Schedule Plan Change
-
-This endpoint can be used to change the plan on an existing subscription. It returns the serialized updated
-subscription object.
-
-The body parameter `change_option` determines the timing of the plan change. Orb supports three options:
-- `end_of_subscription_term`: changes the plan at the end of the existing plan's term.
-    - Issuing this plan change request for a monthly subscription will keep the existing plan active until the start
-      of the subsequent month, and potentially issue an invoice for any usage charges incurred in the intervening
-      period.
-    - Issuing this plan change request for a yearly subscription will keep the existing plan active for the full
-      year.
-- `immediate`: changes the plan immediately. Subscriptions that have their plan changed with this option will be
-  invoiced immediately. This invoice will include any usage fees incurred in the billing period up to the change,
-  along with any prorated recurring fees for the billing period, if applicable.
-- `requested_date`: changes the plan on the requested date (`change_date`). If no timezone is provided, the
-  customer's timezone is used. The `change_date` body parameter is required if this option is chosen.
-
-Note that one of `plan_id` or `external_plan_id` is required in the request body for this operation.
-
-## Price overrides, maximums, and minimums
-Price overrides are used to update some or all prices in the target plan. Minimums and maximums, much like price
-overrides, can be useful when a new customer has negotiated a new or different minimum or maximum spend cap than the
-default for the plan. The request format for price overrides, maximums, and minimums are the same as those in
-[subscription creation](create-subscription).
-
-## Prorations for in-advance fees
-By default, Orb calculates the prorated difference in any fixed fees when making a plan change, adjusting the
-customer balance as needed. For details on this behavior, see
-[Modifying subscriptions](../guides/product-catalog/modifying-subscriptions.md#prorations-for-in-advance-fees).
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

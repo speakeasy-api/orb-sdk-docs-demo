@@ -1,10 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Invoice*
 
-## Issue
-
-This endpoint allows an eligible invoice to be issued manually. This is only possible with invoices where status is `draft`,
-`will_auto_issue` is true, and an `eligible_to_issue_at` is a time in the past. Issuing an invoice could possibly trigger
-side effects, some of which could be customer-visible (e.g. sending emails, auto-collecting payment,
-syncing the invoice to external providers, etc).
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

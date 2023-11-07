@@ -1,9 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Plan*
 
-## Update Plan
-
-This endpoint can be used to update the `external_plan_id`, and `metadata` of an existing plan.
-
-Other fields on a customer are currently immutable.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

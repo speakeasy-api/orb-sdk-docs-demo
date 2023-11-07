@@ -1,9 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Event*
 
-## Close Backfill
-
-Closing a backfill makes the updated usage visible in Orb. Upon closing a backfill, Orb will asynchronously reflect
-the updated usage in invoice amounts and usage graphs. Once all of the updates are complete, the backfill's status
-will transition to `reflected`.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

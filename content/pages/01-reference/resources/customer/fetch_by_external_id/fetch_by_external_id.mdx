@@ -1,10 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Customer*
 
-## Fetch By External Id
-
-This endpoint is used to fetch customer details given an `external_customer_id` (see
-[Customer ID Aliases](../guides/events-and-metrics/customer-aliases)).
-
-Note that the resource and semantics of this endpoint exactly mirror [Get Customer](fetch-customer).
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

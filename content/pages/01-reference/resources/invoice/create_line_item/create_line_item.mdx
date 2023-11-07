@@ -1,8 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Invoice*
 
-## Create Line Item
-
-This creates a one-off fixed fee invoice line item on an Invoice.
-This can only be done for invoices that are in a `draft` status.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

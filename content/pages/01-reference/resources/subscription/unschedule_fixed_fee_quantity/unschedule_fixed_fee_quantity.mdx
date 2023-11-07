@@ -1,9 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Subscription*
 
-## Unschedule Fixed Fee Quantity
-
-This endpoint can be used to clear scheduled updates to the quantity for a fixed fee.
-
-If there are no updates scheduled, this endpoint is a no-op.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

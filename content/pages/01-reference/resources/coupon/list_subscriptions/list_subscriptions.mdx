@@ -1,9 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Coupon*
 
-## List Subscriptions
-
-This endpoint returns a list of all subscriptions that have redeemed a given coupon as a
-[paginated](../reference/pagination) list, ordered starting from the most recently created subscription. For a full
-discussion of the subscription resource, see [Subscription](../guides/concepts#subscription).
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}

@@ -1,13 +1,12 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
 ###### *Invoice*
 
-## List
-
-This endpoint returns a list of all [`Invoice`](../guides/concepts#invoice)s for an account in a list format.
-
-The list of invoices is ordered starting from the most recently issued invoice date. The response also includes
-[`pagination_metadata`](../reference/pagination), which lets the caller retrieve the next page of results if they
-exist.
-
-By default, this only returns invoices that are `issued`, `paid`, or `synced`.
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
 
 {/* render operation */}
