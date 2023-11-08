@@ -18,7 +18,7 @@ logo:
 
 # The favicon to display. You can use a relative path or a URL.
 # If you use a relative path, make sure the file is in the public folder.
-favicon: /favicon.png
+favicon: /favicon.svg
 
 # The code theme to use for usage snippets. See https://codehike.org/docs/themes for a list of themes.
 codeTheme: material-darker
