@@ -5,20 +5,20 @@ title: Orb SDK Docs
 # You must restart the server for this to take effect.
 # You can provide a light and dark color, in case your primary color doesn't show up well in both themes.
 primaryColor:
-  dark: rgb(251, 227, 50)
-  light: rgb(22, 21, 14)
+  dark: "#0081cc"
+  light: "#3683ff"
 
 # The logo to display, based on current theme.
 # You can use a relative path or a URL. If you use a relative path, make sure the file is in the public folder.
 logo:
-  dark: /favicon-light.svg
-  light: /favicon.svg
+  dark: /favicon-light.png
+  light: /favicon.png
   # The link to go to when clicking the logo
   link: https://www.withorb.com/
 
 # The favicon to display. You can use a relative path or a URL.
 # If you use a relative path, make sure the file is in the public folder.
-favicon: /favicon.svg
+favicon: /favicon.png
 
 # The code theme to use for usage snippets. See https://codehike.org/docs/themes for a list of themes.
 codeTheme: material-darker
