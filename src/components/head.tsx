@@ -6,7 +6,7 @@ import { theme } from '@/src/utils/theme';
 export const Head = () => {
   const { frontMatter } = useConfig();
 
-  const title = frontMatter.title || 'Reference';
+  const title = frontMatter.title || theme.title || 'Reference';
 
   return (
     <>
