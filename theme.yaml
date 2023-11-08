@@ -12,7 +12,7 @@ primaryColor:
 # You can use a relative path or a URL. If you use a relative path, make sure the file is in the public folder.
 logo:
   dark: /favicon.svg
-  light: /favicon.svg
+  light: /favicon-light.svg
   # The link to go to when clicking the logo
   link: https://www.withorb.com/
 
