@@ -11,14 +11,14 @@ primaryColor:
 # The logo to display, based on current theme.
 # You can use a relative path or a URL. If you use a relative path, make sure the file is in the public folder.
 logo:
-  dark: /favicon-light.png
-  light: /favicon.png
+  dark: /logo-dark.png
+  light: /logo-light.png
   # The link to go to when clicking the logo
   link: https://www.withorb.com/
 
 # The favicon to display. You can use a relative path or a URL.
 # If you use a relative path, make sure the file is in the public folder.
-favicon: /favicon.svg
+favicon: https://assets-global.website-files.com/64d69beadfe5074323543ebd/64d69cec216b06772b3c3d86_628db67da6929e7b39ade5c7_615f13a5c2f11cc8fa3ec48a_32_Orb-Logomark_Light.png
 
 # The code theme to use for usage snippets. See https://codehike.org/docs/themes for a list of themes.
 codeTheme: material-darker
